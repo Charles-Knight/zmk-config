@@ -59,9 +59,9 @@ game_layer {
 // | SHFT |  3  |  Z  |  X  |  C  |  V  |   |     |      |     |     |     | RET |
 //                    |CTRL | ALT | SPC |   |     |      |     |
                         bindings = <
-   &kp TAB    &kp N1 &kp Q &kp W &kp E &kp R     &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-   &kp ESC    &kp N2 &kp A &kp S &kp D &kp F     &kp H &kp J  &kp K     &kp L   &kp SEMI &to 0
-   &kp LSHIFT &kp N3 &kp Z &kp X &kp C &kp V     &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RET
+   &kp ESC    &kp Q &kp W &kp E &kp R &kp T     &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
+   &kp TAB    &kp A &kp S &kp D &kp F &kp G     &kp H &kp J  &kp K     &kp L   &kp SEMI &to 0
+   &kp LSHIFT &kp Z &kp X &kp C &kp V &kp B     &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RET
                 &kp LCTRL &kp LALT &kp SPACE     &lt 1 SPACE &lt 2 RET &kp RALT
                         >;
                 };
