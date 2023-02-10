@@ -14,10 +14,10 @@
 
 default_layer {
 // ------------------------------------------------------------------------------------------
-// |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP       |
-// |  ESC |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '         |
-// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | SHIFT RET  |
-//                    |CTRL | GUI | TAB |   | SPC | GUI  | ALT |
+// | none |  Q  |  W  |  E  |  R  |   T   |   |  Y  |  U   |  I  |  O  |  P  | none |
+// | none |  A  |  S  |  D  |  F  |   G   |   |  H  |  J   |  K  |  L  |  ;  | none |
+// | none |  Z  |  X  |  C  |  V  |   B   |   |  N  |  M   |  ,  |  .  |  /  | none |
+//                    |CTRL | GUI | SHIFT |   | SPC |  L2  | ALT |
                         bindings = <
    &none &kp Q &kp W &kp E &kp R &kp T     &kp Y &kp U  &kp I     &kp O   &kp P    &none
    &none &kp A &kp S &kp D &kp F &kp G     &kp H &kp J  &kp K     &kp L   &kp SEMI &none
@@ -27,10 +27,10 @@ default_layer {
                 };
 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |  L3  |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |      |
-// |      |     |  Fn |  Fn |  Fn |     |   | LFT | DWN |  UP | RGT |  `  |      |
-// |      |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |      |
-//                    |     |     |     |   |     |     |     |
+// | none |  1  |    2   |   3   |  4   |  5  |   |  6  |  7  |  8  |  9  |  0  | none |
+// | none | ESC |  ENTER |  BKSP |  TAB |     |   | LFT | DWN |  UP | RGT |  '  | none |
+// | none |     |        |       |      |  `  |   |  -  |  =  |  [  |  ]  |  \  | none |
+//                       |       |      |     |   |     |     |     |
                         bindings = <
    &none &kp N1  &kp N2        &kp N3           &kp N4            &kp N5        &kp N6    &kp N7    &kp N8   &kp N9    &kp N0   &none
    &none &kp ESC &kp ENTER     &kp BACKSPACE    &kp TAB           &none         &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT &kp SQT  &none
@@ -41,10 +41,10 @@ lower_layer {
 
 raise_layer {
 // -----------------------------------------------------------------------------------------
-// | BTCLR |  F1 |  F2 |  F3 |  F4 |  F5 |   |  F6 |  F7 |  F8 |  F9 | F10 |  BT3 |
-// |  BT1  |     |     |     |     |     |   |     |     |     |     |     |  BT4 |
-// |  BT2  |     |     |     |     |     |   |     |     |     |     |     |  BT5 |
-//                     |     |     |     |   |     |     |     |
+// | none |  F1 |  F2 |  F3 |  F4 |  F5 |   |  F6 |  F7 |  F8 |  F9 |   F10  | none |
+// | none | BT0 | BT1 | BT2 | BT3 | BTR |   |     |     |     |     | BT_CLR | none |
+// | none |     |     |     |     |     |   |     |     |     |     |        | none |
+//                    |     |     |     |   |     |     |     |
                         bindings = <
    &none &kp F1       &kp F2       &kp F3       &kp F4       &kp F5           &kp F6 &kp F7 &kp F8 &kp F9 &kp F10    &none
    &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4     &none  &none  &none  &none  &bt BT_CLR &none
@@ -52,18 +52,5 @@ raise_layer {
                     	                                &none &none &none     &none &none &none
                         >;
                 };
-// game_layer {
-// // ------------------------------------------------------------------------------------------
-// // |  TAB |  1  |  Q  |  W  |  E  |  R  |   |     |      |     |     |     |     |
-// // |  ESC |  2  |  A  |  S  |  D  |  F  |   |     |      |     |     |     | L0  |
-// // | SHFT |  3  |  Z  |  X  |  C  |  V  |   |     |      |     |     |     | RET |
-// //                    |CTRL | ALT | SPC |   |     |      |     |
-//                         bindings = <
-//    &kp ESC    &kp Q &kp W &kp E &kp R &kp T     &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-//    &kp TAB    &kp A &kp S &kp D &kp F &kp G     &kp H &kp J  &kp K     &kp L   &kp SEMI &to 0
-//    &kp LSHIFT &kp Z &kp X &kp C &kp V &kp B     &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RET
-//                 &kp LCTRL &kp LALT &kp SPACE     &lt 1 SPACE &lt 2 RET &kp RALT
-//                         >;
-//                 };
         };
 };
