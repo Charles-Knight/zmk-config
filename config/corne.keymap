@@ -43,9 +43,9 @@
         
         navigation_layer {
                 bindings = <
-                        &none &kp N1         &kp N2          &kp N3             &kp N4            &kp N5        &kp N6 &kp N7        &kp N8        &kp N9       &kp N0           &none
-                        &none &hm LSHIFT ESC &hm LCTRL ENTER &hm LALT BACKSPACE &hm LGUI TAB      &kp LGUI      &none  &hm RGUI LEFT &hm RALT DOWN &hm RCTRL UP &hm RSHIFT RIGHT &none
-                        &none &none          &kp LA(SPACE)   &kp LC(LG(LEFT))   &kp LC(LG(RIGHT)) &none         &none  &kp HOME      &kp PG_DN     &kp PG_UP    &kp END          &none
+                        &none &kp N1         &kp N2          &kp N3             &kp N4            &kp N5        &kp N6   &kp N7        &kp N8      &kp N9          &kp N0     &none
+                        &none &hm LSHIFT ESC &hm LCTRL ENTER &hm LALT BACKSPACE &hm LGUI TAB      &kp LGUI      &kp LEFT &hm RGUI DOWN &hm RALT UP &hm RCTRL RIGHT &kp RSHIFT &none
+                        &none &none          &kp LA(SPACE)   &kp LC(LG(LEFT))   &kp LC(LG(RIGHT)) &none         &none    &kp HOME      &kp PG_DN   &kp PG_UP       &kp END    &none
                                                                                     &trans &trans &trans        &trans &trans &trans
                 >;
         };
