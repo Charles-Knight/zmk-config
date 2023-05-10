@@ -71,10 +71,10 @@
         symbol_layer {
             label = "Sym";
             bindings = <
-                &none &kp LT    &kp LBRC  &kp LPAR  &kp LBKT  &none        &none     &kp RBKT  &kp RPAR  &kp RBRC   &kp GT   &none
-                &none &kp AMPS  &kp DLLR  &kp HASH  &kp TILDE &kp BSLH     &kp MINUS &kp EQUAL &kp EXCL  &kp DQT    &kp SQT  &none
-                &none &kp PRCNT &kp CARET &kp ASTRK &kp GRAVE &kp PIPE     &kp UNDER &kp PLUS  &kp COMMA &kp PERIOD &kp BSLH &none
-                                                     &none &none &none     &none &none &none
+                &none &kp N1   &kp N2 &kp N3   &kp N4   &kp N5        &kp N6    &kp N7    &kp N8  &kp N9     &kp N0   &none
+                &none &kp LBKT &kp LT &kp LBRC &kp LPAR &kp TILDE     &kp MINUS &kp EQUAL &kp SQT &none      &kp PIPE &none
+                &none &kp RBKT &kp GT &kp RBRC &kp RPAR &kp GRAVE     &kp UNDER &kp PLUS  &kp DQT &kp PERIOD &kp BSLH &none
+                                            &none &none &kp LSHFT     &kp RSHFT &none &none
             >;
         };
 
