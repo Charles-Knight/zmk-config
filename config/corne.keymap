@@ -28,21 +28,21 @@
                 bindings = <&kp>, <&kp>;
                 };
                 
-                spce_bkspc: space_backspace {
-                        compatible = "zmk,behavior-mod-morph";
-                        label = "SPACE_BACKSPACE";
-                        #binding-cells = <0>;
-                        bindings = <&lt SYMB_L SPACE>, <&lt SYMB_L BACKSPACE>;
-                        mods = <(MOD_LSFT)>;
-                };
+                // spce_bkspc: space_backspace {
+                //         compatible = "zmk,behavior-mod-morph";
+                //         label = "SPACE_BACKSPACE";
+                //         #binding-cells = <0>;
+                //         bindings = <&lt SYMB_L SPACE>, <&lt SYMB_L BACKSPACE>;
+                //         mods = <(MOD_LSFT)>;
+                // };
 
-                tab_entr: tab_enter {
-                        compatible = "zmk,behavior-mod-morph";
-                        label = "TAB_ENTER";
-                        #binding-cells = <0>;
-                        bindings = <&lt SYMB_L TAB>, <&lt SYMB_L ENTER>;
-                        mods = <(MOD_RSFT)>;
-                };
+                // tab_entr: tab_enter {
+                //         compatible = "zmk,behavior-mod-morph";
+                //         label = "TAB_ENTER";
+                //         #binding-cells = <0>;
+                //         bindings = <&lt SYMB_L TAB>, <&lt SYMB_L ENTER>;
+                //         mods = <(MOD_RSFT)>;
+                // };
         };
 
         combos {
