@@ -27,7 +27,7 @@
                 flavor = "tap-preferred";
                 bindings = <&kp>, <&kp>;
                 };
-
+                
                 spce_bkspc: space_backspace {
                         compatible = "zmk,behavior-mod-morph";
                         label = "SPACE_BACKSPACE";
@@ -44,6 +44,15 @@
                         mods = <(MOD_RSFT)>;
                 };
         };
+
+        combos {
+                compatible = "zmk,combos";
+                combo_esc {
+                        timeout-ms = <50>;
+                        key-positions = <1 2>;
+                        bindings = <&kp ESC>;
+                }
+        }
         
         keymap {
                 compatible = "zmk,keymap";
@@ -85,7 +94,6 @@
         };
 
         symbol_layer {
-            label = "Sym";
             bindings = <
                 &none &kp N1   &kp N2 &kp N3   &kp N4   &kp N5        &kp N6    &kp N7    &kp N8  &kp N9     &kp N0   &none
                 &none &kp LBKT &kp LT &kp LBRC &kp LPAR &kp TILDE     &kp MINUS &kp EQUAL &kp SQT &none      &kp PIPE &none
