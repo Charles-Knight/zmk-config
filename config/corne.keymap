@@ -49,19 +49,25 @@
                 compatible = "zmk,combos";
                 combo_esc {
                         timeout-ms = <50>;
-                        key-positions = <13 14>;
+                        key-positions = <14 15>;
+                        bindings = <&kp ESC>;
+                };
+
+                combo_tab {
+                        timeout-ms = <50>;
+                        key-positions = <15 16>;
                         bindings = <&kp ESC>;
                 };
 
                 combo_enter {
                         timeout-ms = <50>;
-                        key-positions = <21 22>;
+                        key-positions = <20 21>;
                         bindings = <&kp ENTER>;
                 };
 
                 combo_backspace {
                         timeout-ms = <50>;
-                        key-positions = <20 21>;
+                        key-positions = <19 20>;
                         bindings = <&kp BACKSPACE>;
                 };
         };
