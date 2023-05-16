@@ -58,6 +58,12 @@
                         key-positions = <21 22>;
                         bindings = <&kp ENTER>;
                 };
+
+                combo_backspace {
+                        timeout-ms = <50>;
+                        key-positions = <20 21>;
+                        bindings = <&kp BACKSPACE>;
+                };
         };
         
         keymap {
