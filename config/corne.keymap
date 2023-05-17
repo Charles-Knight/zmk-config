@@ -70,6 +70,12 @@
                         key-positions = <19 20>;
                         bindings = <&kp BACKSPACE>;
                 };
+
+                combo_gui {
+                        timeout-ms = <50>;
+                        key-positions = <16 17>;
+                        bindings = <&kp LEFT_GUI>;
+                }
         };
         
         keymap {
