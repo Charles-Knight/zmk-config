@@ -19,6 +19,7 @@
 
 / {
         chosen {
+                zmk,kscan = &kscan0;
                 zmk,matrix_transform: &five_column_transform;
         };
 
@@ -129,7 +130,7 @@
                 &kp C_BKLT_TOG   &kp C_BRI_DN &kp C_BRI_UP &none &none     &none &none &none &none &none
                 &kp C_MUTE       &kp C_VOL_DN &kp C_VOL_UP &none &none     &none &none &none &none &none
                 &kp C_PLAY_PAUSE &kp C_PREV   &kp C_NEXT   &none &none     &none &none &none &none &none
-                                                           &none &none &none     &none &none &none
+                                                     &none &none &none     &none &none &none
             >;      
         };
 
