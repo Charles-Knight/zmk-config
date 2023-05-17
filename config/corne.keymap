@@ -86,7 +86,7 @@
                         &none &kp Q        &kp W       &kp E      &kp R      &kp T            &kp Y &kp U        &kp I      &kp O       &kp P           &none
                         &none &hm LSHIFT A &hm LCTRL S &hm LALT D &hm LGUI F &kp G            &kp H &hm RGUI J   &hm RALT K &hm RCTRL L &hm RSHIFT SEMI &none
                         &none &kp Z        &kp X       &kp C      &kp V      &lt BLUE_L B     &kp N &lt MEDI_L M &kp COMMA  &kp DOT     &kp FSLH        &none
-                                                  &mo NAVI_L  &mo SYMB_L &mt LSHIFT SPACE     &mt RSHIFT SPACE &mo SYMB_L &mo NAVI_L
+                                                  &mo NAVI_L  &mo NAVI_L &lt SYMB_L TAB     &lt SYMB_L SPACE &mo NAVI_L &mo NAVI_L
                 >;
         };
         
@@ -119,10 +119,10 @@
 
         symbol_layer {
             bindings = <
-                &none &kp N1   &kp N2 &kp N3   &kp N4   &kp N5        &kp N6    &kp N7    &kp N8  &kp N9     &kp N0   &none
-                &none &kp LBKT &kp LT &kp LBRC &kp LPAR &kp TILDE     &kp MINUS &kp EQUAL &kp SQT &none      &kp PIPE &none
-                &none &kp RBKT &kp GT &kp RBRC &kp RPAR &kp GRAVE     &kp UNDER &kp PLUS  &kp DQT &kp PERIOD &kp BSLH &none
-                                             &trans &trans &trans     &trans &trans &trans
+                &none &kp N1          &kp N2 &kp N3   &kp N4   &kp N5        &kp N6    &kp N7    &kp N8  &kp N9     &kp N0          &none
+                &none &hm LSHIFT LBKT &kp LT &kp LBRC &kp LPAR &kp TILDE     &kp MINUS &kp EQUAL &kp SQT &none      &hm RSHIFT PIPE &none
+                &none &kp RBKT        &kp GT &kp RBRC &kp RPAR &kp GRAVE     &kp UNDER &kp PLUS  &kp DQT &kp PERIOD &kp BSLH        &none
+                                                    &trans &trans &trans     &trans &trans &trans
             >;
         };
 
