@@ -66,17 +66,6 @@
                         bindings = <&kp LEFT_GUI>;
                 };
 
-                combo_space {
-                        timeout-ms = <50>;
-                        key-positions = <16 17 18 19 >;
-                        bindings = <&kp SPACE>;
-                };
-
-                comb_nav_layer {
-                        timeout-ms = <50>;
-                        key-positions = <32 33>;
-                        bindings = <&mo NAVI_L>;
-                };
         };
         
         keymap {
