@@ -10,12 +10,14 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 
 #define BASE_l 0
-#define NAVI_L 1
-#define FUNC_L 2
-#define NUMB_L 3
-#define SYMB_L 4
-#define BLUE_L 5
-#define MEDI_L 6
+#define FUNC_L 1
+#define NUMB_L 2
+#define SYMB_L 3
+#define SYM2_L 4
+#define NAVI_L 5
+#define BLUE_L 6
+#define MEDI_L 7
+#define GAME_L 8
 
 / {
         chosen {
@@ -67,6 +69,14 @@
                 };
 
         };
+
+        conditional_layers {
+                compatible = "zmk,conditional-layers";
+                tri_layer {
+                        if-layers = <SYMB_L SYM2_L>;
+                        then-layer = <NAVI_L>;
+                };
+        };
         
         keymap {
                 compatible = "zmk,keymap";
@@ -76,16 +86,7 @@
                         &kp Q        &kp W       &kp E      &kp R      &kp T            &kp Y &kp U        &kp I      &kp O       &kp P          
                         &hm LSHIFT A &hm LCTRL S &hm LALT D &hm LGUI F &kp G            &kp H &hm RGUI J   &hm RALT K &hm RCTRL L &hm RSHIFT SEMI
                         &kp Z        &kp X       &kp C      &kp V      &lt BLUE_L B     &kp N &lt MEDI_L M &kp COMMA  &kp DOT     &kp FSLH       
-                                                  &mo NAVI_L  &mo NAVI_L &lt SYMB_L TAB     &lt SYMB_L SPACE &mo NAVI_L &mo NAVI_L
-                >;
-        };
-        
-        navigation_layer {
-                bindings = <
-                        &kp N1         &kp N2          &kp N3             &kp N4            &kp N5        &kp N6   &kp N7        &kp N8      &kp N9          &kp N0    
-                        &hm LSHIFT ESC &hm LCTRL ENTER &hm LALT BACKSPACE &hm LGUI TAB      &kp LGUI      &kp LEFT &hm RGUI DOWN &hm RALT UP &hm RCTRL RIGHT &kp RSHIFT
-                        &none          &kp LA(SPACE)   &kp LC(LG(LEFT))   &kp LC(LG(RIGHT)) &none         &none    &kp HOME      &kp PG_DN   &kp PG_UP       &kp END   
-                                                                                    &trans &trans &trans        &trans &trans &trans
+                                                  &mo NAVI_L  &kp LSHFT &lt SYMB_L TAB     &lt SYM2_L SPACE &kp RSHFT &mo NAVI_L
                 >;
         };
 
@@ -107,13 +108,31 @@
             >;
         };
 
-        symbol_layer {
+        symbol_layer_1 {
             bindings = <
                 &kp N1          &kp N2 &kp N3   &kp N4   &kp N5        &kp N6    &kp N7    &kp N8  &kp N9     &kp N0         
                 &hm LSHIFT LBKT &kp LT &kp LBRC &kp LPAR &kp TILDE     &kp MINUS &kp EQUAL &kp SQT &none      &hm RSHIFT PIPE
                 &kp RBKT        &kp GT &kp RBRC &kp RPAR &kp GRAVE     &kp UNDER &kp PLUS  &kp DQT &kp PERIOD &kp BSLH       
                                                     &trans &trans &trans     &trans &trans &trans
             >;
+        };
+
+        symbol_layer_2 {
+            bindings = <
+                &kp N1          &kp N2 &kp N3   &kp N4   &kp N5        &kp N6    &kp N7    &kp N8  &kp N9     &kp N0         
+                &hm LSHIFT LBKT &kp LT &kp LBRC &kp LPAR &kp TILDE     &kp MINUS &kp EQUAL &kp SQT &none      &hm RSHIFT PIPE
+                &kp RBKT        &kp GT &kp RBRC &kp RPAR &kp GRAVE     &kp UNDER &kp PLUS  &kp DQT &kp PERIOD &kp BSLH       
+                                                    &trans &trans &trans     &trans &trans &trans
+            >;
+        };
+
+        navigation_layer {
+                bindings = <
+                        &kp N1         &kp N2          &kp N3             &kp N4            &kp N5        &kp N6   &kp N7        &kp N8      &kp N9          &kp N0    
+                        &hm LSHIFT ESC &hm LCTRL ENTER &hm LALT BACKSPACE &hm LGUI TAB      &kp LGUI      &kp LEFT &hm RGUI DOWN &hm RALT UP &hm RCTRL RIGHT &kp RSHIFT
+                        &none          &kp LA(SPACE)   &kp LC(LG(LEFT))   &kp LC(LG(RIGHT)) &none         &none    &kp HOME      &kp PG_DN   &kp PG_UP       &kp END   
+                                                                                    &trans &trans &trans        &trans &trans &trans
+                >;
         };
 
         bluetooth_layer {
