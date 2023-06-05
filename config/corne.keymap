@@ -83,10 +83,10 @@
 
                 default_layer {
                         bindings = <
-                                &kp Q &kp W       &kp E      &kp R      &kp T            &kp Y &kp U        &kp I      &kp O       &kp P
-                                &kp A &hm LCTRL S &hm LALT D &hm LGUI F &kp G            &kp H &hm RGUI J   &hm RALT K &hm RCTRL L &kp SEMI
-                                &kp Z &kp X       &kp C      &kp V      &lt BLUE_L B     &kp N &lt MEDI_L M &kp COMMA  &kp DOT     &kp FSLH
-                                                &none  &kp LSHFT &lt SYMB_L TAB     &lt SYM2_L SPACE &kp RSHFT &none
+                                &kp Q &kp W       &kp E      &kp R      &kp T            &kp Y &kp U      &kp I          &kp O         &kp P
+                                &kp A &kp S       &kp D      &kp F      &kp G            &kp H &kp J      &kp K          &kp L         &kp SEMI
+                                &kp Z &hm LCTRL X &hm LALT C &hm LGUI V &lt BLUE_L B     &kp N &hm RGUI M &hm RALT COMMA &hm RCTRL DOT &kp FSLH
+                                                &none  &kp LSHFT &lt SYMB_L TAB     &lt SYM2_L SPACE &kp RSHFT &mo MEDI_L
                         >;
                 };
 
@@ -128,10 +128,10 @@
 
                 navigation_layer {
                         bindings = <
-                                &none     &none         &none            &none             &none      &none    &none     &none     &none     &none
-                                &kp LSHFT &kp LCTRL     &kp LALT         &kp LGUI          &none      &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &none
-                                &none     &kp LA(SPACE) &kp LC(LG(LEFT)) &kp LC(LG(RIGHT)) &none      &kp HOME &kp PG_DN &kp PG_UP &kp END   &none
-                                                                            &trans &trans &trans      &trans &trans &trans
+                                &none     &none     &none    &none    &none      &none    &none     &none     &none     &none
+                                &kp LSHFT &kp LCTRL &kp LALT &kp LGUI &none      &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &none
+                                &none     &kp LCTRL &kp LALT &kp LGUI &none      &kp HOME &kp PG_DN &kp PG_UP &kp END   &none
+                                                       &trans &trans &trans      &trans &trans &trans
                         >;
                 };
 
