@@ -70,27 +70,29 @@
                 };
         };
 
-        conditional_layers {
-                compatible = "zmk,conditional-layers";
-                tri_layer {
-                        if-layers = <SYMB_L SYM2_L>;
-                        then-layer = <NAVI_L>;
-                };
-        };
+        // conditional_layers {
+        //         compatible = "zmk,conditional-layers";
+        //         tri_layer {
+        //                 if-layers = <SYMB_L SYM2_L>;
+        //                 then-layer = <NAVI_L>;
+        //         };
+        // };
 
         keymap {
                 compatible = "zmk,keymap";
 
                 default_layer {
+                        label = "Base";
                         bindings = <
                                 &kp Q &kp W       &kp E      &kp R      &kp T            &kp Y &kp U      &kp I          &kp O         &kp P
                                 &kp A &kp S       &kp D      &kp F      &kp G            &kp H &kp J      &kp K          &kp L         &kp SEMI
                                 &kp Z &hm LCTRL X &hm LALT C &hm LGUI V &lt BLUE_L B     &kp N &hm RGUI M &hm RALT COMMA &hm RCTRL DOT &kp FSLH
-                                                &none  &kp LSHFT &lt SYMB_L TAB     &lt SYM2_L SPACE &kp RSHFT &mo MEDI_L
+                                                     &none  &kp LSHFT &lt NAVI_L TAB     &lt SYMB_L SPACE &kp RSHFT &mo MEDI_L
                         >;
                 };
 
                 function_layer {
+                        label = "Func";
                         bindings = <
                                 &kp F1 &kp F2 &kp F3 &kp F4 &kp F5     &kp F6 &kp F7 &kp F8 &kp F9 &kp F10
                                 &none  &none  &none  &none  &none      &none  &none  &none  &none  &none
@@ -100,6 +102,7 @@
                 };
 
                 number_layer {
+                        label = "Num";
                         bindings = <
                                 &none &kp N7 &kp N8 &kp N9 &none     &none &none    &none    &none     &none
                                 &none &kp N4 &kp N5 &kp N6 &none     &none &kp LGUI &kp LALT &kp LCTRL &none
@@ -109,15 +112,17 @@
                 };
 
                 symbol_layer_1 {
+                        label = "Sym";
                         bindings = <
-                                &kp N1   &kp N2 &kp N3   &kp N4   &kp N5        &kp N6    &kp N7    &kp N8  &kp N9     &kp N0
-                                &kp LBKT &kp LT &kp LBRC &kp LPAR &kp TILDE     &kp MINUS &kp EQUAL &kp SQT &none      &kp PIPE
-                                &kp RBKT &kp GT &kp RBRC &kp RPAR &kp GRAVE     &kp UNDER &kp PLUS  &kp DQT &kp PERIOD &kp BSLH
-                                                       &trans &trans &trans     &trans &trans &trans
+                                &kp N1    &kp N2    &kp N3  &kp N4   &kp N5        &none &none    &none    &none     &none
+                                &kp N6    &kp N7    &kp N8  &kp N9   &kp N0        &none &none    &none    &none     &none
+                                &kp MINUS &kp EQUAL &kp SQT &kp BSLH &kp GRAVE     &none &kp RGUI &kp RALT &kp RCTRL &kp RSHFT
+                                                   &kp LBKT &kp RBKT &trans        &trans &trans &trans
                         >;
                 };
 
                 symbol_layer_2 {
+                        label = "Symb2";
                         bindings = <
                                 &kp N1   &kp N2 &kp N3   &kp N4   &kp N5        &kp N6    &kp N7    &kp N8  &kp N9     &kp N0
                                 &kp LBKT &kp LT &kp LBRC &kp LPAR &kp TILDE     &kp MINUS &kp EQUAL &kp SQT &none      &kp PIPE
@@ -127,15 +132,17 @@
                 };
 
                 navigation_layer {
+                        label = "Navi";
                         bindings = <
                                 &none     &none     &none    &none    &none      &none    &none     &none     &none     &none
-                                &kp LSHFT &kp LCTRL &kp LALT &kp LGUI &none      &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &none
-                                &none     &kp LCTRL &kp LALT &kp LGUI &none      &kp HOME &kp PG_DN &kp PG_UP &kp END   &none
+                                &none     &none     &none    &none    &none      &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &none
+                                &kp LSHFT &kp LCTRL &kp LALT &kp LGUI &none      &kp HOME &kp PG_DN &kp PG_UP &kp END   &none
                                                        &trans &trans &trans      &trans &trans &trans
                         >;
                 };
 
                 bluetooth_layer {
+                        label = "Blue";
                         bindings = <
                                 &none &none &none &none &none     &none        &none        &none        &none        &none
                                 &none &none &none &none &none     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
@@ -145,6 +152,7 @@
                 };
 
                 media_layer {
+                        label = "Media";
                         bindings = <
                                 &kp C_BKLT_TOG   &kp C_BRI_DN &kp C_BRI_UP &none &none     &none &none &none &none &none
                                 &kp C_MUTE       &kp C_VOL_DN &kp C_VOL_UP &none &none     &none &none &none &none &none
