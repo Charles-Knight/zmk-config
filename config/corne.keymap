@@ -69,41 +69,103 @@
                         bindings = <&kp LEFT_GUI>;
                 };
 
+                // Number Row Combos
+
+                combo_one{
+                        timeout-ms = <50>;
+                        key-positions = <0 10>;
+                        bindings = <&kp N1>;
+                };
+
+                combo_two{
+                        timeout-ms = <50>;
+                        key-positions = <1 11>;
+                        bindings = <&kp N2>;
+                };
+
+                combo_three{
+                        timeout-ms = <50>;
+                        key-positions = <2 12>;
+                        bindings = <&kp N3>;
+                };
+
+                combo_four{
+                        timeout-ms = <50>;
+                        key-positions = <3 13>;
+                        bindings = <&kp N4>;
+                };
+
+                combo_five{
+                        timeout-ms = <50>;
+                        key-positions = <4 14>;
+                        bindings = <&kp N5>;
+                };
+
+                combo_six{
+                        timeout-ms = <50>;
+                        key-positions = <5 15>;
+                        bindings = <&kp N6>;
+                };
+
+                combo_seven{
+                        timeout-ms = <50>;
+                        key-positions = <6 16>;
+                        bindings = <&kp N7>;
+                };
+
+                combo_eight{
+                        timeout-ms = <50>;
+                        key-positions = <7 17>;
+                        bindings = <&kp N8>;
+                };
+
+                combo_nine{
+                        timeout-ms = <50>;
+                        key-positions = <8 18>;
+                        bindings = <&kp N9>;
+                };
+
+                combo_zero{
+                        timeout-ms = <50>;
+                        key-positions = <9 19>;
+                        bindings = <&kp N0>;
+                };
+
                 // Modifier Combos
 
                 combo_left_ctrl{
                         timeout-ms = <50>;
-                        key-positions = <0 1>;
+                        key-positions = <11 21>;
                         bindings = <&kp LEFT_CONTROL>;
                 };
 
                 combo_left_alt{
                         timeout-ms = <50>;
-                        key-positions = <1 2>;
+                        key-positions = <12 22>;
                         bindings = <&kp LEFT_ALT>;
                 };
 
                 combo_left_gui{
                         timeout-ms = <50>;
-                        key-positions = <2 3>;
+                        key-positions = <13 23>;
                         bindings = <&kp LEFT_GUI>;
                 };
 
                 combo_right_gui{
                         timeout-ms = <50>;
-                        key-positions = <6 7>;
+                        key-positions = <16 26>;
                         bindings = <&kp RIGHT_GUI>;
                 };
 
                 combo_right_alt{
                         timeout-ms = <50>;
-                        key-positions = <7 8>;
+                        key-positions = <17 27>;
                         bindings = <&kp RIGHT_ALT>;
                 };
 
                 combo_right_ctrl{
                         timeout-ms = <50>;
-                        key-positions = <8 9>;
+                        key-positions = <18 28>;
                         bindings = <&kp RIGHT_CONTROL>;
                 };
         };
