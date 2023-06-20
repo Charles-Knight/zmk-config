@@ -135,37 +135,37 @@
 
                 combo_left_ctrl{
                         timeout-ms = <50>;
-                        key-positions = <0 1>;
+                        key-positions = <11 21>;
                         bindings = <&kp LEFT_CONTROL>;
                 };
 
                 combo_left_alt{
                         timeout-ms = <50>;
-                        key-positions = <1 2>;
+                        key-positions = <12 22>;
                         bindings = <&kp LEFT_ALT>;
                 };
 
                 combo_left_gui{
                         timeout-ms = <50>;
-                        key-positions = <2 3>;
+                        key-positions = <13 23>;
                         bindings = <&kp LEFT_GUI>;
                 };
 
                 combo_right_gui{
                         timeout-ms = <50>;
-                        key-positions = <6 7>;
+                        key-positions = <16 26>;
                         bindings = <&kp RIGHT_GUI>;
                 };
 
                 combo_right_alt{
                         timeout-ms = <50>;
-                        key-positions = <7 8>;
+                        key-positions = <17 27>;
                         bindings = <&kp RIGHT_ALT>;
                 };
 
                 combo_right_ctrl{
                         timeout-ms = <50>;
-                        key-positions = <8 9>;
+                        key-positions = <18 28>;
                         bindings = <&kp RIGHT_CONTROL>;
                 };
         };
