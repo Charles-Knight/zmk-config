@@ -74,61 +74,61 @@
                 combo_one{
                         timeout-ms = <50>;
                         key-positions = <0 10>;
-                        bindings = <&kp 1>;
+                        bindings = <&kp N1>;
                 };
 
                 combo_two{
                         timeout-ms = <50>;
                         key-positions = <1 11>;
-                        bindings = <&kp 2>;
+                        bindings = <&kp N2>;
                 };
 
                 combo_three{
                         timeout-ms = <50>;
                         key-positions = <2 12>;
-                        bindings = <&kp 3>;
+                        bindings = <&kp N3>;
                 };
 
                 combo_four{
                         timeout-ms = <50>;
                         key-positions = <3 13>;
-                        bindings = <&kp 4>;
+                        bindings = <&kp N4>;
                 };
 
                 combo_five{
                         timeout-ms = <50>;
                         key-positions = <4 14>;
-                        bindings = <&kp 5>;
+                        bindings = <&kp N5>;
                 };
 
                 combo_six{
                         timeout-ms = <50>;
                         key-positions = <5 15>;
-                        bindings = <&kp 6>;
+                        bindings = <&kp N6>;
                 };
 
                 combo_seven{
                         timeout-ms = <50>;
                         key-positions = <6 16>;
-                        bindings = <&kp 7>;
+                        bindings = <&kp N7>;
                 };
 
                 combo_eight{
                         timeout-ms = <50>;
                         key-positions = <7 17>;
-                        bindings = <&kp 8>;
+                        bindings = <&kp N8>;
                 };
 
                 combo_nine{
                         timeout-ms = <50>;
                         key-positions = <8 18>;
-                        bindings = <&kp 9>;
+                        bindings = <&kp N9>;
                 };
 
                 combo_zero{
                         timeout-ms = <50>;
                         key-positions = <9 19>;
-                        bindings = <&kp 0>;
+                        bindings = <&kp N0>;
                 };
 
                 // Modifier Combos
