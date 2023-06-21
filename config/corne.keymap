@@ -208,10 +208,10 @@
                 symbol_layer_1 {
                         label = "Sym";
                         bindings = <
-                                &kp N1    &kp N2    &kp N3  &kp N4   &kp N5        &none &none    &none    &none     &none
-                                &kp N6    &kp N7    &kp N8  &kp N9   &kp N0        &none &none    &none    &none     &none
+                                &none     &none     &none   &none    &none         &none &none    &none    &none     &none
+                                &none     &none     &none   &kp LBKT &kp RBKT      &none &none    &none    &none     &none
                                 &kp MINUS &kp EQUAL &kp SQT &kp BSLH &kp GRAVE     &none &kp RGUI &kp RALT &kp RCTRL &kp RSHFT
-                                                   &kp LBKT &kp RBKT &trans        &trans &trans &trans
+                                                       &trans &trans &trans        &trans &trans &trans
                         >;
                 };
 
