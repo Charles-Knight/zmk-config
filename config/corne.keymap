@@ -63,12 +63,6 @@
                         bindings = <&kp BACKSPACE>;
                 };
 
-                combo_gui {
-                        timeout-ms = <50>;
-                        key-positions = <13 14>;
-                        bindings = <&kp LEFT_GUI>;
-                };
-
                 // Number Row Combos
 
                 combo_one{
