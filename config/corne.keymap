@@ -155,10 +155,10 @@
                 navigation_layer {
                         label = "Navi";
                         bindings = <
-                                &none     &none     &none    &none    &none      &none    &none     &none     &none     &none
-                                &none     &none     &none    &none    &none      &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &none
-                                &kp LSHFT &kp LCTRL &kp LALT &kp LGUI &none      &kp HOME &kp PG_DN &kp PG_UP &kp END   &none
-                                                       &trans &trans &trans      &trans &trans &trans
+                                &none &none &none &none &none      &none    &none     &none     &none     &none
+                                &none &none &none &none &none      &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &none
+                                &none &none &none &none &none      &kp HOME &kp PG_DN &kp PG_UP &kp END   &none
+                                         &trans &trans &trans      &trans &trans &trans
                         >;
                 };
 
