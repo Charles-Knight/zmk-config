@@ -14,11 +14,10 @@
 #define FUNC_L 1
 #define NUMB_L 2
 #define SYMB_L 3
-#define SYM2_L 4
-#define NAVI_L 5
-#define BLUE_L 6
-#define MEDI_L 7
-#define GAME_L 8
+#define NAVI_L 4
+#define BLUE_L 5
+#define MEDI_L 6
+#define GAME_L 7
 
 / {
         chosen {
@@ -143,23 +142,13 @@
                         >;
                 };
 
-                symbol_layer_1 {
+                symbol_layer {
                         label = "Sym";
                         bindings = <
                                 &kp N1    &kp N2    &kp N3  &kp N4   &kp N5        &kp N6   &kp N7   &ko N8 &kp N9  &kp N0
                                 &kp MINUS &kp EQUAL &kp SQT &kp BSLH &kp GRAVE     &kp LBKT &kp RBKT &none  &none   &none
                                 &none     &none     &none   &none    &none         &none    &none    &none  &none   &none
                                                        &trans &trans &trans        &trans &trans &trans
-                        >;
-                };
-
-                symbol_layer_2 {
-                        label = "Symb2";
-                        bindings = <
-                                &kp N1   &kp N2 &kp N3   &kp N4   &kp N5        &kp N6    &kp N7    &kp N8  &kp N9     &kp N0
-                                &kp LBKT &kp LT &kp LBRC &kp LPAR &kp TILDE     &kp MINUS &kp EQUAL &kp SQT &none      &kp PIPE
-                                &kp RBKT &kp GT &kp RBRC &kp RPAR &kp GRAVE     &kp UNDER &kp PLUS  &kp DQT &kp PERIOD &kp BSLH
-                                                       &trans &trans &trans     &trans &trans &trans
                         >;
                 };
 
