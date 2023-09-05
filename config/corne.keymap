@@ -11,13 +11,11 @@
 #include <dt-bindings/zmk/ext_power.h>
 
 #define BASE_l 0
-#define FUNC_L 1
-#define NUMB_L 2
-#define SYMB_L 3
-#define NAVI_L 4
-#define BLUE_L 5
-#define MEDI_L 6
-#define GAME_L 7
+#define RAISE_L 1
+#define LOWER_L 2
+#define BLUE_L 3
+#define MEDI_L 4
+#define GAME_L 5
 
 / {
         chosen {
@@ -118,47 +116,27 @@
                                 &kp Q &kp W &kp E &kp R &kp T            &kp Y &kp U        &kp I     &kp O   &kp P
                                 &kp A &kp S &kp D &kp F &kp G            &kp H &kp J        &kp K     &kp L   &kp SEMI
                                 &kp Z &kp X &kp C &kp V &lt BLUE_L B     &kp N &lt MEDI_L M &kp COMMA &kp DOT &kp FSLH
-                                 &mo NUMB_L &kp LSHFT &lt NAVI_L TAB     &lt SYMB_L SPACE &kp RSHFT &none
+                                        &kp LCTRL &kp LGUI &kp LSHFT     &lt SYMB_L SPACE &kp LALT &mo LOWER_L
                         >;
                 };
 
-                function_layer {
-                        label = "Func";
+                raise_layer {
+                        label = "Raise";
                         bindings = <
-                                &kp F1 &kp F2 &kp F3 &kp F4 &kp F5     &kp F6 &kp F7 &kp F8 &kp F9 &kp F10
-                                &none  &none  &none  &none  &none      &none  &none  &none  &none  &none
-                                &none  &none  &none  &none  &none      &none  &none  &none  &none  &none
-                                                &none &none &none      &none &none &none
+                                &kp N1 &kp N2 &kp N3 &kp N4 &kp N5        &kp N6    &kp N7    &kp N8   &kp N9    &kp N0
+                                &none  &none  &none  &none  &kp GRAVE     &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT &kp SQT
+                                &none  &none  &none  &none  &none         &kp MINUS &kp EQUAL &kp LBKT &kp RBKT  &kp BSLH
+                                                 &trans &trans &trans     &trans &trans &trans
                         >;
                 };
 
-                number_layer {
-                        label = "Num";
+                lower_layer {
+                        label = "Lower";
                         bindings = <
-                                &none &none &none &none &none     &none &kp N7 &kp N8 &kp N9 &none
-                                &none &none &none &none &none     &none &kp N4 &kp N5 &kp N6 &none
-                                &none &none &none &none &none     &none &kp N1 &kp N2 &kp N3 &none
-                                         &trans &trans &trans     &kp N0 &kp RSHFT &kp DOT
-                        >;
-                };
-
-                symbol_layer {
-                        label = "Sym";
-                        bindings = <
-                                &kp N1    &kp N2    &kp N3  &kp N4   &kp N5        &kp N6   &kp N7   &kp N8 &kp N9  &kp N0
-                                &kp MINUS &kp EQUAL &kp SQT &kp BSLH &kp GRAVE     &kp LBKT &kp RBKT &none  &none   &none
-                                &none     &none     &none   &none    &none         &none    &none    &none  &none   &none
-                                                       &trans &trans &trans        &trans &trans &trans
-                        >;
-                };
-
-                navigation_layer {
-                        label = "Navi";
-                        bindings = <
-                                &none &none &none &none &none      &none    &none     &none     &none     &none
-                                &none &none &none &none &none      &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &none
-                                &none &none &none &none &none      &kp HOME &kp PG_DN &kp PG_UP &kp END   &none
-                                         &trans &trans &trans      &trans &trans &trans
+                                &none &none &none &none &none     &none &none &none &none &none
+                                &none &none &none &none &none     &none &none &none &none &none
+                                &none &none &none &none &none     &none &none &none &none &none
+                                            &none &none &none     &none &none &none
                         >;
                 };
 
