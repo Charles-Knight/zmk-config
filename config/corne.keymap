@@ -95,13 +95,15 @@
         keymap {
                 compatible = "zmk,keymap";
 
+        // Maybe move space and tab to center key of each thumb cluster and shift to inner most key? This would make it possible to use the other two
+        // thumb cluster keys on each side as a combo without affecting your shift key
         default_layer {
                 label = "Base";
                 bindings = <
                         &kp EQUAL &kp Q &kp W       &kp E      &kp R      &kp T            &kp Y &kp U         &kp I      &kp O       &kp P    &kp BSLH
                         &kp MINUS &kp A &hm LCTRL S &hm LALT D &hm LGUI F &kp G            &kp H &hm RGUI J    &hm RALT K &hm RCTRL L &kp SEMI &kp SQT
                         &kp LBKT  &kp Z &kp X       &kp C      &kp V      &lt BLUE_L B     &kp N &lt MEDI_L M  &kp COMMA  &kp DOT     &kp FSLH &kp RBKT
-                                                         &mo LOWR_L &kp LSHIFT &kp TAB     &lt RAIS_L SPACE &kp RSHIFT &kp GRAVE
+                                                         &mo LOWR_L &kp TAB &kp LSHIFT     &kp RSHIFT &lt RAIS_L SPACE &kp GRAVE
                 >;
         };
         
