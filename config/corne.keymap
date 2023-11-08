@@ -102,17 +102,20 @@
         keymap {
                 compatible = "zmk,keymap";
 
-        // Maybe add tab to the left of shift
-        // Add combo on backspace and grave to send enter.
-        // combo on left two most keys for escape
-        // if lshift tab is to hard to hit could explicitly code it as a combo on the two keys.
+        // Put capsword and capslock on a layer with single keypress
+        // Numberpad layer?
+        // Symbol layer again?
+        // 
+        // Bottom row -> RadioLayer?, lower, shift, space, raise, backtick
+        // Have fourth layer for raise and lower combined?
+        // Combine Radio and Media layer?
         default_layer {
                 label = "Base";
                 bindings = <
-                        &kp EQUAL &kp Q &kp W       &kp E      &kp R      &kp T            &kp Y &kp U         &kp I      &kp O       &kp P    &kp BSLH
-                        &kp MINUS &kp A &hm LCTRL S &hm LALT D &hm LGUI F &kp G            &kp H &hm RGUI J    &hm RALT K &hm RCTRL L &kp SEMI &kp SQT
-                        &kp LBKT  &kp Z &kp X       &kp C      &kp V      &lt BLUE_L B     &kp N &lt MEDI_L M  &kp COMMA  &kp DOT     &kp FSLH &kp RBKT
-                                                         &mo LOWR_L &kp TAB &kp LSHIFT     &lt RAIS_L SPACE &bspc_del &kp GRAVE
+                        &kp EQUAL &kp Q &kp W &kp E &kp R &kp T            &kp Y &kp U        &kp I     &kp O   &kp P    &kp BSLH
+                        &kp MINUS &kp A &kp S &kp D &kp F &kp G            &kp H &kp J        &kp K     &kp L   &kp SEMI &kp SQT
+                        &kp LBKT  &kp Z &kp X &kp C &kp V &lt BLUE_L B     &kp N &lt MEDI_L M &kp COMMA &kp DOT &kp FSLH &kp RBKT
+                                           &none &mo LOWR_L &kp LSHIFT     &lt RAIS_L SPACE &mo RAIS_L &kp GRAVE
                 >;
         };
         
@@ -120,7 +123,7 @@
                 label = "Raise";
                 bindings = <
                         &none &kp N1 &kp N2    &kp N3   &kp N4   &kp N5       &kp N6   &kp N7        &kp N8      &kp N9    &kp N0  &none
-                        &none &none  &kp LCTRL &kp LALT &kp LGUI &none        &kp LEFT &kp DOWN      &kp UP      &kp RIGHT &none   &none
+                        &none &none  &sk LCTRL &sk LALT &sk LGUI &none        &kp LEFT &kp DOWN      &kp UP      &kp RIGHT &none   &none
                         &none &none  &none     &none    &none    &none        &kp HOME &kp PAGE_DOWN &kp PAGE_UP &kp END   &none   &none
                                                     &trans &trans &trans      &trans &trans &trans
                 >;
