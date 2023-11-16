@@ -122,20 +122,20 @@
         raise_layer {
                 label = "Raise";
                 bindings = <
-                        &none &kp N1 &kp N2    &kp N3   &kp N4   &kp N5       &kp N6   &kp N7        &kp N8      &kp N9    &kp N0  &none
-                        &none &none  &sk LCTRL &sk LALT &sk LGUI &none        &kp LEFT &kp DOWN      &kp UP      &kp RIGHT &none   &none
-                        &none &none  &kp X     &kp C    &kp V    &none        &kp HOME &kp PAGE_DOWN &kp PAGE_UP &kp END   &none   &none
+                        &none &kp N1  &kp N2    &kp N3   &kp N4   &kp N5       &kp N6   &kp N7    &kp N8  &kp N9    &kp N0     &none
+                        &none &kp ESC &sk LCTRL &sk LALT &sk LGUI &none        &kp LEFT &kp DOWN  &kp UP  &kp RIGHT &caps_word &kp CAPSLOCK
+                        &none &none   &kp X     &kp C    &kp V    &none        &kp HOME &bspc_del &kp TAB &kp ESC   &kp ENTER  &kp END
                                                     &trans &trans &trans      &trans &trans &trans
                 >;
         };
 
         lower_layer {
-                label = "Lower";
+                label = "Num";
                 bindings = <
-                        &none &none &none     &none    &none    &none     &none    &none    &none  &none     &none &none
-                        &none &none &kp LCTRL &kp LALT &kp LGUI &none     &kp LEFT &kp DOWN &kp UP &kp RIGHT &none &none
-                        &none &none &none     &none    &none    &none     &none    &none    &none  &none     &none &none
-                                                 &trans &trans &trans     &trans &trans &trans
+                        &none &kp N1 &kp N2    &kp N3   &kp N4   &kp N5     &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &none
+                        &none &none  &kp LCTRL &kp LALT &kp LGUI &none      &none  &kp N4 &kp N5 &kp N6 &none  &none
+                        &none &none  &none     &none    &none    &none      &none  &kp N1 &kp N2 &kp N3 &none  &none
+                                                 &trans &trans &trans       &trans &trans &trans
                 >;
         };
 
