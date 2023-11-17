@@ -117,7 +117,7 @@
                 bindings = <
                         &none &none &none     &none    &none    &none     &kp ESC  &kp TAB   &bspc_del &kp ENTER &none      &none
                         &none &none &sk LCTRL &sk LALT &sk LGUI &none     &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &caps_word &none
-                        &none &kp z &kp X     &kp C    &kp V    &none     &kp HOME &kp PG_DN &kp PG_UP &kp END   &kp CAPS   &none
+                        &none &kp Z &kp X     &kp C    &kp V    &none     &kp HOME &kp PG_DN &kp PG_UP &kp END   &kp CAPS   &none
                                                  &trans &trans &trans     &trans &trans &trans
                 >;
         };
