@@ -62,15 +62,15 @@
                 default_layer {
                         label = "Base";
                         bindings = <
-                                &kp EQUAL &kp Q &kp W &kp E &kp R &kp T            &kp Y &kp U        &kp I     &kp O   &kp P    &kp BSLH
-                                &kp MINUS &kp A &kp S &kp D &kp F &kp G            &kp H &kp J        &kp K     &kp L   &kp SEMI &kp SQT
-                                &kp LBKT  &kp Z &kp X &kp C &kp V &lt BLUE_L B     &kp N &lt MEDI_L M &kp COMMA &kp DOT &kp FSLH &kp RBKT
-                                                   &none &mo LOWR_L &kp LSHIFT     &lt RAIS_L SPACE &mo RAIS_L &kp GRAVE
+                                &kp EQUAL &kp Q &kp W &kp E &kp R &kp T     &kp Y &kp U &kp I     &kp O   &kp P    &kp BSLH
+                                &kp MINUS &kp A &kp S &kp D &kp F &kp G     &kp H &kp J &kp K     &kp L   &kp SEMI &kp SQT
+                                &kp LBKT  &kp Z &kp X &kp C &kp V &kp B     &kp N &kp M &kp COMMA &kp DOT &kp FSLH &kp RBKT
+                                       &mo MEDI_L &mo LOWR_L &kp LSHIFT     &lt RAIS_L SPACE &mo RAIS_L &kp GRAVE
                         >;
                 };
                 
                 raise_layer {
-                        label = "Raise";
+                        label = "Nav";
                         bindings = <
                                 &none &none &none     &none    &none    &none     &kp ESC  &kp TAB   &bspc_del &kp ENTER &none      &none
                                 &none &none &sk LCTRL &sk LALT &sk LGUI &none     &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &caps_word &none
@@ -110,7 +110,7 @@
                 };
 
                 media_layer {
-                        label = "Adjust";
+                        label = "Adj";
                         bindings = <
                                 &none &none &kp C_BKLT_TOG   &kp C_BRI_DN &kp C_BRI_UP &none     &none        &none        &none        &none        &none        &none
                                 &none &none &kp C_MUTE       &kp C_VOL_DN &kp C_VOL_UP &none     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none
