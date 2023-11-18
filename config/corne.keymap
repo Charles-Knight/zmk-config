@@ -10,10 +10,10 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 
 #define BASE_l 0
-#define RAIS_L 1
-#define LOWR_L 2
+#define NAV_L 1
+#define NUM_L 2
 #define FUNC_L 3
-#define MEDI_L 4
+#define ADJ_L 4
 #define GAME_L 5
 
 / {
@@ -55,20 +55,19 @@
                 // Symbol layer again?
                 // A better way to shift number layer.
                 // Windows and Mac Default Layers and nav layer with OS specfic shortcuts
-                // Bottom row -> RadioLayer?, lower, shift, space, raise, backtick
+                // Bottom row -> Adjust Layer?, Num Layer, shift, space, raise, backtick
                 // Have fourth layer for raise and lower combined?
-                // Combine Radio and Media layer?
                 default_layer {
                         label = "Base";
                         bindings = <
                                 &kp EQUAL &kp Q &kp W &kp E &kp R &kp T     &kp Y &kp U &kp I     &kp O   &kp P    &kp BSLH
                                 &kp MINUS &kp A &kp S &kp D &kp F &kp G     &kp H &kp J &kp K     &kp L   &kp SEMI &kp SQT
                                 &kp LBKT  &kp Z &kp X &kp C &kp V &kp B     &kp N &kp M &kp COMMA &kp DOT &kp FSLH &kp RBKT
-                                       &mo MEDI_L &mo LOWR_L &kp LSHIFT     &lt RAIS_L SPACE &mo RAIS_L &kp GRAVE
+                                       &mo ADJ_L &mo NUM_L &kp LSHIFT     &lt NAV_L SPACE &mo NAV_L &kp GRAVE
                         >;
                 };
                 
-                raise_layer {
+                navigation_layer {
                         label = "Nav";
                         bindings = <
                                 &none &none &none     &none    &none    &none     &kp ESC  &kp TAB   &bspc_del &kp ENTER &none      &none
@@ -78,7 +77,7 @@
                         >;
                 };
 
-                lower_layer {
+                number_layer {
                         label = "Num";
                         bindings = <
                                 &none &kp N1 &kp N2    &kp N3   &kp N4   &kp N5     &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &none
