@@ -52,7 +52,6 @@
         keymap {
                 compatible = "zmk,keymap";
 
-                // add &bootloader to adjust layer as shown on rev1350 keymap
                 // sticky key shift on alternate layers with mods
                 // Symbol layer again?
                 // A better way to shift number layer.

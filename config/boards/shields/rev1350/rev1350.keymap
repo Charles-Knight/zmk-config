@@ -61,7 +61,6 @@
                         >;
                 };
 
-                // TODO: Update this with macros and common shortucts
                 number_layer {
                         bindings = <
                                 &none &kp N1 &kp N2    &kp N3   &kp N4   &kp N5     &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &none
