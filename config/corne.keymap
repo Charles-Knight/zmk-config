@@ -17,7 +17,6 @@
 #define GAME_L 5
 
 / {
-
         behaviors {
                 bspc_del: backspace_delete {
                         compatible = "zmk,behavior-mod-morph";
