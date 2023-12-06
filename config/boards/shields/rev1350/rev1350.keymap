@@ -45,7 +45,7 @@
                 // TODO: Change space to mod morph so that shift + space is backspace?
                 default_layer {
                        bindings = <
-                                &kp EQUAL &kp Q &kp W &kp E &kp R &kp T     &kp Y &kp U &kp I     &kp O   &kp P    &kp BSLH
+                                &kp EQUAL &kp Q &kp W &kp E &kp R &kp T     &kp Y &kp U &kp I     &kp O   &kp P    &kp GRAVE
                                 &kp MINUS &kp A &kp S &kp D &kp F &kp G     &kp H &kp J &kp K     &kp L   &kp SEMI &kp SQT
                                 &kp LBKT  &kp Z &kp X &kp C &kp V &kp B     &kp N &kp M &kp COMMA &kp DOT &kp FSLH &kp RBKT
                                              &mo NUM_L &kp LSHFT &lt NAV_L SPACE &kp RSHFT &lt ADJ_L GRAVE
