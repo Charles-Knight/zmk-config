@@ -60,9 +60,10 @@
                         //                                   &trans    &trans    &trans    &trans    &trans
                         // >;
 
+                        // Move caps and caps word to top row pointer finger on right hand, put home and end on left hand straddling arrow cluster
                         bindings = <
-                                &none &kp CAPS   &kp ESC  &kp UP   &kp TAB   &none     &none    &none     &bspc_del &kp ENTER &none     &none
-                                &none &caps_word &kp LEFT &kp DOWN &kp RIGHT &none     &none    &sk LGUI  &sk LCTRL &sk LALT  &sk LSHFT &none
+                                &none &kp CAPS   &kp ESC  &kp UP   &kp TAB   &none     &none    &bspc_del &none     &kp ENTER &none     &none
+                                &none &caps_word &kp LEFT &kp DOWN &kp RIGHT &none     &none    &sk LGUI  &sk LALT  &sk LCTRL &sk LSHFT &none
                                 &none &kp Z      &kp X    &kp C    &kp V     &none     &kp HOME &kp PG_DN &kp PG_UP &kp END   &none     &none
                                                           &trans    &trans    &trans    &trans    &trans
                         >;

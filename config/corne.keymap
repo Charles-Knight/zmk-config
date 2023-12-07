@@ -46,6 +46,15 @@
                 // Windows and Mac Default Layers and nav layer with OS specfic shortcuts
                 // Bottom row -> Adjust Layer?, Num Layer, shift, space, raise, backtick
                 // Have fourth layer for raise and lower combined?
+                
+                // might need to remove labels
+                // https://discord.com/channels/669011382284451861/793773710342881280/1182011685997920397
+                // Some info that might be useful to put in announcement:
+                //         You will need to flash both sides of a split after this change, or behaviors that run on the peripheral side will stop working.
+                //         The label property will keep working for now, but Zephyr could remove it eventually. You should update any keymaps, custom boards/shields, and open PRs as follows:
+                //         For layer names to use on displays, rename label to display-name.
+                //         For everything else, you can just remove the label property entirely.
+                //         For PRs with new behaviors, do not prefix node names with behavior_ as this is redundant and wastes flash space (the string stored in ROM to identify the behavior is now the node name once the label is removed).
                 default_layer {
                         label = "Base";
                         bindings = <
