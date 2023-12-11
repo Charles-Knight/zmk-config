@@ -20,7 +20,7 @@
         behaviors {
                 bspc_del: backspace_delete {
                         compatible = "zmk,behavior-mod-morph";
-                        label = "BACKSPACE_DELETE";
+                        display-name = "BACKSPACE_DELETE";
                         #binding-cells = <0>;
                         bindings = <&kp BACKSPACE>, <&kp DELETE>;
                         mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -56,7 +56,7 @@
                 //         For everything else, you can just remove the label property entirely.
                 //         For PRs with new behaviors, do not prefix node names with behavior_ as this is redundant and wastes flash space (the string stored in ROM to identify the behavior is now the node name once the label is removed).
                 default_layer {
-                        label = "Base";
+                        display-name = "Base";
                         bindings = <
                                 &kp EQUAL &kp Q &kp W &kp E &kp R &kp T     &kp Y &kp U &kp I     &kp O   &kp P    &kp BSLH
                                 &kp MINUS &kp A &kp S &kp D &kp F &kp G     &kp H &kp J &kp K     &kp L   &kp SEMI &kp SQT
@@ -66,7 +66,7 @@
                 };
                 
                 navigation_layer {
-                        label = "Nav";
+                        display-name = "Nav";
                         bindings = <
                                 &none &none     &none     &none    &none    &none     &kp ESC  &kp TAB   &bspc_del &kp ENTER &none      &none
                                 &none &sk LSHFT &sk LCTRL &sk LALT &sk LGUI &none     &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &caps_word &none
@@ -76,7 +76,7 @@
                 };
 
                 number_layer {
-                        label = "Num";
+                        display-name = "Num";
                         bindings = <
                                 &none &kp N1    &kp N2    &kp N3   &kp N4   &kp N5     &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &none
                                 &none &sk LSHFT &kp LCTRL &kp LALT &kp LGUI &none      &none  &kp N4 &kp N5 &kp N6 &none  &none
@@ -86,7 +86,7 @@
                 };
 
                 function_layer {
-                        label = "Func";
+                        display-name = "Func";
                         bindings = <
                                 &none  &kp F1 &kp F2 &kp F3 &kp F4 &kp F5     &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &none
                                 &trans &none  &none  &none  &none  &none      &none  &none  &none  &none  &none   &none
@@ -96,7 +96,7 @@
                 };
 
                 adjust_layer {
-                        label = "Adj";
+                        display-name = "Adj";
                         bindings = <
                                 &none &none &kp C_BKLT_TOG   &kp C_BRI_DN &kp C_BRI_UP &none     &none        &none        &none        &none        &none        &bootloader
                                 &none &none &kp C_MUTE       &kp C_VOL_DN &kp C_VOL_UP &none     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none
@@ -106,7 +106,7 @@
                 };
 
                 game_layer {
-                        label = "Games";
+                        display-name = "Games";
                         bindings = <
                                 &kp ESC    &kp Q &kp W &kp E &kp R &kp T     &kp Y &kp U &kp I     &kp O      &kp P         &kp BACKSPACE
                                 &kp TAB    &kp A &kp S &kp D &kp F &kp G     &kp H &kp J &kp K     &kp L      &kp SEMI      &kp SQT
