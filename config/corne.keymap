@@ -39,21 +39,11 @@
         keymap {
                 compatible = "zmk,keymap";
 
-                // sticky key shift on alternate layers with mods
                 // Symbol layer again?
-                // A better way to shift number layer.
                 // Windows and Mac Default Layers and nav layer with OS specfic shortcuts
                 // Bottom row -> Adjust Layer?, Num Layer, shift, space, raise, backtick
                 // Have fourth layer for raise and lower combined?
                 
-                // might need to remove labels
-                // https://discord.com/channels/669011382284451861/793773710342881280/1182011685997920397
-                // Some info that might be useful to put in announcement:
-                //         You will need to flash both sides of a split after this change, or behaviors that run on the peripheral side will stop working.
-                //         The label property will keep working for now, but Zephyr could remove it eventually. You should update any keymaps, custom boards/shields, and open PRs as follows:
-                //         For layer names to use on displays, rename label to display-name.
-                //         For everything else, you can just remove the label property entirely.
-                //         For PRs with new behaviors, do not prefix node names with behavior_ as this is redundant and wastes flash space (the string stored in ROM to identify the behavior is now the node name once the label is removed).
                 default_layer {
                         display-name = "Base";
                         bindings = <
@@ -67,9 +57,9 @@
                 navigation_layer {
                         display-name = "Nav";
                         bindings = <
-                                &none &none     &none     &none    &none    &none     &kp ESC  &kp TAB   &bspc_del &kp ENTER &none      &none
-                                &none &sk LSHFT &sk LCTRL &sk LALT &sk LGUI &none     &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &caps_word &none
-                                &none &kp Z     &kp X     &kp C    &kp V    &none     &kp HOME &kp PG_DN &kp PG_UP &kp END   &kp CAPS   &none
+                                &none &none    &kp ESC  &kp UP   &kp TAB   &none       &kp CAPS   &bspc_del &none    &kp ENTER &none     &none
+                                &none &kp HOME &kp LEFT &kp DOWN &kp RIGHT &kp END     &caps_word &sk LGUI  &sk LALT &sk LCTRL &sk LSHFT &none
+                                &none &kp Z    &kp X    &kp C    &kp V     &none       &none      &none     &none    &none     &none     &none
                                                              &trans &trans &trans     &trans &trans &trans
                         >;
                 };
