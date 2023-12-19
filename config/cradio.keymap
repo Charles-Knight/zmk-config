@@ -37,7 +37,7 @@
 
                 navigation_layer {
                         bindings = <
-                                &none &kp ESC  &kp UP   &kp TAB   &none   &kp CAPS   f&bspc_del &none    &kp ENTER &none
+                                &none &kp ESC  &kp UP   &kp TAB   &none   &kp CAPS   &bspc_del &none    &kp ENTER &none
                                 &none &kp LEFT &kp DOWN &kp RIGHT &none   &caps_word &kp LGUI  &kp LALT &kp LCTRL &kp LSHFT
                                 &none &none    &none    &none     &none   &none      &none &none &none &none
                                                           &trans &trans   &trans &trans
