@@ -8,8 +8,8 @@
 #define BASE 0
 #define NAV  1
 #define NUM  2
-#define ADJ  3
-#define FUN  4
+#define FUN  3
+#define ADJ  4
 
 / {
         behaviors {
