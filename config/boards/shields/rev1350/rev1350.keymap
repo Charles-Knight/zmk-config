@@ -52,14 +52,6 @@
                 };
 
                 navigation_layer {
-                        // bindings = <
-                        //         &none &none     &none     &none    &none    &none     &kp ESC  &kp TAB   &bspc_del &kp ENTER &none      &none
-                        //         &none &sk LSHFT &sk LCTRL &sk LALT &sk LGUI &none     &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &caps_word &none
-                        //         &none &kp Z     &kp X     &kp C    &kp V    &none     &kp HOME &kp PG_DN &kp PG_UP &kp END   &kp CAPS   &none
-                        //                                   &trans    &trans    &trans    &trans    &trans
-                        // >;
-
-                        // Move caps and caps word to top row pointer finger on right hand, put home and end on left hand straddling arrow cluster
                         bindings = <
                                 &none &none    &kp ESC  &kp UP   &kp TAB   &none       &kp CAPS   &bspc_del &none    &kp ENTER &none     &none
                                 &none &kp HOME &kp LEFT &kp DOWN &kp RIGHT &kp END     &caps_word &sk LGUI  &sk LALT &sk LCTRL &sk LSHFT &none
