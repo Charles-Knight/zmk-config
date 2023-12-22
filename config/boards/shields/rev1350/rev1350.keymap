@@ -11,9 +11,10 @@
 #define BASE_L 0
 #define NAV_L  1
 #define NUM_L  2
-#define FUNC_L 3
-#define ADJ_L  4
-#define GAME_L 5
+#define SYM_L  3
+#define FUN_L  4
+#define ADJ_L  5
+#define GAME_L 6
 
 / {
         // Todo: New Behaviors
@@ -66,6 +67,15 @@
                                 &none &sk LSHFT &kp LCTRL &kp LALT &kp LGUI &none      &none  &kp N4 &kp N5 &kp N6 &none  &none
                                 &none &none     &none     &none    &none    &none      &none  &kp N1 &kp N2 &kp N3 &none  &none
                                                                 &trans &trans &trans &trans &trans
+                        >;
+                };
+
+                symbol_layer {
+                        bindings = <
+                                &none &none &kp LBKT &kp RBKT &kp MINUS &kp EQUAL     &none     &kp AMPS   &kp ASTRK &kp LPAR  &kp RPAR &none
+                                &none &none &kp LBRC &kp RBRC &kp UNDER &kp PLUS      &kp GRAVE &kp DOLLAR &kp PRCNT &kp CARET &kp SQT  &none
+                                &none &none &kp LPAR &kp RPAR &kp PIPE  &kp BSLH      &kp TILDE &kp EXCL   &kp AT    &kp HASH  &kp DQT  &none
+                                                                 &trans &trans &trans &trans &trans
                         >;
                 };
 
