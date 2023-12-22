@@ -37,8 +37,7 @@
                         bindings = <&tog GAME_L>;
                 };
         };
-        
-        // TODO: Power settings... Enable sleep mode like on corne?
+
         keymap {
                 compatible = "zmk,keymap";
                 
