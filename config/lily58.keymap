@@ -15,6 +15,17 @@
 #define GAME_L 3
 
 / {
+
+    behaviors {
+        bspc_del: backspace_delete {
+                compatible = "zmk,behavior-mod-morph";
+                #binding-cells = <0>;
+                bindings = <&kp BACKSPACE>, <&kp DELETE>;
+                mods = <(MOD_LSFT|MOD_RSFT)>;
+                keep-mods = <(MOD_RSFT)>;
+        };
+    };
+        
     keymap {
         compatible = "zmk,keymap";
 
@@ -24,17 +35,17 @@
 &kp GRAVE &kp Q  &kp W  &kp E    &kp R    &kp T                      &kp Y  &kp U    &kp I     &kp O   &kp P    &kp BSLH
 &kp ESC   &kp A  &kp S  &kp D    &kp F    &kp G                      &kp H  &kp J    &kp K     &kp L   &kp SEMI &kp SQT
 &kp LCTRL &kp Z  &kp X  &kp C    &kp V    &kp B  &kp LBKT   &kp RBKT &kp N  &kp M    &kp COMMA &kp DOT &kp FSLH &mo AJST_L
-                      &kp LALT &kp LGUI &kp TAB &kp LSHFT   &kp SPACE &kp BSPC &kp ENTER &none
+                      &kp LALT &kp LGUI &kp TAB &kp LSHFT   &lt SCND_L SPACE &kp BSPC &kp ENTER &none
             >;
         };
 
         secondary_layer {
             bindings = <
-&bt BT_CLR &bt BT_SEL 0     &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3 &bt BT_SEL 4                 &trans    &trans    &trans          &trans    &trans    &trans
-&kp F1     &kp F2           &kp F3            &kp F4            &kp F5       &kp F6                       &kp F7    &kp F8    &kp F9          &kp F10   &kp F11   &kp F12
-&kp GRAVE  &kp EXCL         &kp AT            &kp HASH          &kp DOLLAR   &kp PRCNT                    &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR  &kp RPAR  &kp TILDE
-&trans     &ext_power EP_ON &ext_power EP_OFF &ext_power EP_TOG &trans       &trans    &trans   &trans    &trans    &kp MINUS &kp KP_PLUS     &kp LBRC  &kp RBRC  &kp PIPE
-                                              &trans            &trans       &trans    &trans   &trans    &trans    &trans    &trans
+&none &none &none &none &none &none               &none    &none    &none    &none     &none   &none
+&none &none &none &none &none &none               &none    &none    &kp UP   &none     &none   &none
+&none &none &none &none &none &none               &kp HOME &kp LEFT &kp DOWN &kp RIGHT &kp END &none
+&none &none &none &none &none &none &none   &none &none    &none    &none    &none     &none   &none
+              &trans &trans &trans &trans   &trans &trans &trans &trans
             >;
         };
 
