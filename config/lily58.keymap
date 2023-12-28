@@ -41,10 +41,10 @@
 
         secondary_layer {
             bindings = <
-&none &none &none &none &none &none               &none    &none    &none    &none     &none   &none
-&none &none &none &none &none &none               &none    &none    &kp UP   &none     &none   &none
-&none &none &none &none &none &none               &kp HOME &kp LEFT &kp DOWN &kp RIGHT &kp END &none
-&none &none &none &none &none &none &none   &none &none    &none    &none    &none     &none   &none
+&none &none &none &none &none &none               &none     &none    &none    &none     &none   &none
+&none &none &none &none &none &none               &caps_word &kp BSPC &kp UP   &kp ENTER &none   &none
+&none &none &none &none &none &none               &kp HOME  &kp LEFT &kp DOWN &kp RIGHT &kp END &none
+&none &none &none &none &none &none &none   &none &none     &none    &none    &none     &none   &none
               &trans &trans &trans &trans   &trans &trans &trans &trans
             >;
         };
