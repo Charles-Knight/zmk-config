@@ -12,7 +12,7 @@
 #define BASE_L 0
 #define SCND_L 1
 #define FUNC_L 2
-#define ADJ_L  3
+#define AJST_L 3
 #define GAME_L 4
 
 / {
@@ -48,7 +48,7 @@
                                 &kp EQUAL &kp Q &kp W &kp E &kp R &kp T     &kp Y &kp U &kp I     &kp O   &kp P    &kp BSLH
                                 &kp MINUS &kp A &kp S &kp D &kp F &kp G     &kp H &kp J &kp K     &kp L   &kp SEMI &kp SQT
                                 &kp LBKT  &kp Z &kp X &kp C &kp V &kp B     &kp N &kp M &kp COMMA &kp DOT &kp FSLH &kp RBKT
-                                             &mo ADJ_L &none &kp LSHIFT     &lt SCND_L SPACE &bspc_del &kp GRAVE
+                                            &mo AJST_L &none &kp LSHIFT     &lt SCND_L SPACE &bspc_del &kp GRAVE
                         >;
                 };
                 
