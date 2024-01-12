@@ -1,0 +1,6 @@
+if SHIELD_CROWBOARD
+
+config ZMK_KEYBOARD_NAME
+    default "crowboard"
+
+endif

@@ -1,0 +1,9 @@
+file_format: "1"
+id: crowboard
+name: Crowboard
+type: shield
+url: https://github.com/doesntfazer/CrowBoard
+requires: [rpi_pico]
+exposes: []
+features:
+  - keys
