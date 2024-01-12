@@ -6,7 +6,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define BASE 0
-#define NAV  1
+#define SCND 1
 #define NUM  2
 #define FUN  3
 #define ADJ  4
@@ -31,16 +31,16 @@
                                 &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U &kp I     &kp O   &kp P
                                 &kp A &kp S &kp D &kp F &kp G   &kp H &kp J &kp K     &kp L   &kp SEMI
                                 &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M &kp COMMA &kp DOT &kp FSLH
-                                            &mo NUM &kp LSHFT   &lt NAV SPACE &mo ADJ
+                                            &mo NUM &kp LSHFT   &lt SCND SPACE &mo ADJ
                         >;
                 };
 
-                navigation_layer {
+                secondary_layer {
                         bindings = <
-                                &none &kp ESC  &kp UP   &kp TAB   &none   &kp CAPS   &bspc_del &none    &kp ENTER &none
-                                &none &kp LEFT &kp DOWN &kp RIGHT &none   &caps_word &sk LGUI  &sk LALT &sk LCTRL &sk LSHFT
-                                &none &none    &none    &none     &none   &none      &none &none &none &none
-                                                          &trans &trans   &trans &trans
+                                &kp EQUAL &kp ESC  &kp UP   &kp TAB   &kp LBKT    &kp RBKT   &bspc_del &kp GRAVE &kp ENTER &kp BSLH
+                                &kp MINUS &kp LEFT &kp DOWN &kp RIGHT &none       &caps_word &sk LGUI  &sk LALT  &sk LCTRL &kp SQT
+                                &kp N1    &kp N2   &kp N3   &kp N4    &kp N5      &kp N6     &kp N7    &kp N8    &kp N9    &kp N0
+                                                                  &trans &trans   &trans &trans
                         >;
                 };
 
