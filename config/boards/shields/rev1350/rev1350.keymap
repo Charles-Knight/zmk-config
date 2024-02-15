@@ -34,6 +34,35 @@
                         key-positions = <11 35>;
                         bindings = <&tog GAME_L>;
                 };
+                combo_escape {
+                        timeout-ms = <50>;
+                        key-positions = <14 15>;
+                        bindings = <&kp ESC>;
+                };
+
+                combo_tab {
+                        timeout-ms = <50>;
+                        key-positions = <15 16>;
+                        bindings = <&kp TAB>;
+                };
+
+                combo_backspace {
+                        timeout-ms = <50>;
+                        key-positions = <19 20>;
+                        bindings = <&bspc_del>;
+                };
+
+                combo_enter {
+                        timeout-ms = <50>;
+                        key-positions = <20 21>;
+                        bindings = <&kp ENTER>;
+                };
+                
+                combo_capsword{
+                        timeout-ms = <50>;
+                        key-positions = <19 20 21>;
+                        bindings = <&caps_word>;
+                };
         };
 
         keymap {
@@ -45,7 +74,7 @@
                                 &kp EQUAL &kp Q &kp W &kp E &kp R &kp T     &kp Y &kp U &kp I     &kp O   &kp P    &kp BSLH
                                 &kp MINUS &kp A &kp S &kp D &kp F &kp G     &kp H &kp J &kp K     &kp L   &kp SEMI &kp SQT
                                 &kp LBKT  &kp Z &kp X &kp C &kp V &kp B     &kp N &kp M &kp COMMA &kp DOT &kp FSLH &kp RBKT
-                                             &none &kp LSHFT &lt SCND_L SPACE &bspc_del &lt AJST_L GRAVE
+                                             &kp LGUI &kp LSHFT &lt SCND_L SPACE &kp RCTRL &lt AJST_L GRAVE
                         >;
                 };
 
