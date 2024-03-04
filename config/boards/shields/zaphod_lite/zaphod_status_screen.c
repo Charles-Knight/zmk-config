@@ -13,13 +13,6 @@
 #include <zephyr/logging/log.h>
 LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 
-#if IS_ENABLED(CONFIG_ZAPHOD_BONGO_CAT)
-#include "zaphod_bongo_cat_widget.h"
-
-static struct zaphod_bongo_cat_widget bongo_widget;
-
-#endif
-
 #if IS_ENABLED(CONFIG_ZMK_WIDGET_BATTERY_STATUS)
 static struct zmk_widget_battery_status battery_status_widget;
 #endif
@@ -40,10 +33,8 @@ lv_style_t global_style;
 
 lv_obj_t *zmk_display_status_screen() {
     lv_obj_t *screen;
-#if !IS_ENABLED(CONFIG_ZAPHOD_BONGO_CAT)
     lv_obj_t *dont_label;
     lv_obj_t *panic_label;
-#endif
     lv_obj_t *center_frame;
 
     lv_style_init(&global_style);
@@ -70,9 +61,6 @@ lv_obj_t *zmk_display_status_screen() {
     lv_obj_align(center_frame, LV_ALIGN_CENTER, 0, 0);
     lv_obj_center(center_frame);
 
-#if IS_ENABLED(CONFIG_ZAPHOD_BONGO_CAT)
-    zaphod_bongo_cat_widget_init(&bongo_widget, center_frame);
-#else
     dont_label = lv_label_create(center_frame);
     lv_label_set_text(dont_label, "Don't");
 
@@ -81,7 +69,7 @@ lv_obj_t *zmk_display_status_screen() {
 
     lv_obj_update_layout(dont_label); // otherwise proper height is not known
     lv_obj_set_y(panic_label, lv_obj_get_height(dont_label));
-#endif // IS_ENABLED(CONFIG_ZAPHOD_BONGO_CAT)
+
     lv_obj_set_size(center_frame, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
 
 #if IS_ENABLED(CONFIG_ZMK_WIDGET_LAYER_STATUS)
