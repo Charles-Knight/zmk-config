@@ -66,6 +66,7 @@ lv_obj_t *zmk_display_status_screen() {
 
     panic_label = lv_label_create(center_frame);
     lv_label_set_long_mode(panic_label, LV_LABEL_LONG_SCROLL_CIRCULAR);
+    lv_obj_set_width(panic_label, 150);
     lv_label_set_text(panic_label, "This is some longer text");
 
     lv_obj_update_layout(dont_label); // otherwise proper height is not known
