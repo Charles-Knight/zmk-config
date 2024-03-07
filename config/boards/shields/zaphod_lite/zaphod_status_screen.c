@@ -29,10 +29,16 @@ lv_obj_t *zmk_display_status_screen() {
     screen = lv_obj_create(NULL);
     lv_obj_add_style(screen, &global_style, LV_PART_MAIN);
 
+    // Create Image
+
+    lv_obj_t *img lv_image_create(screen);
+    lv_image_set_src(img, LV_SYMBOL_OK "Accept");
+    lv_obj_align(img, LV_ALIGN_CENTER, 0, 0)
+
     // Create Simple Message Box
-    static const char * btns[] = {"Apply", "Close", ""};
-    lv_obj_t * mbox = lv_msgbox_create(NULL, "Hello", "This is a message box", btns, true);
-    lv_obj_center(mbox);
+    // char * btns[] = {"Apply", "Close", ""};
+    // lv_obj_t * mbox = lv_msgbox_create(screen, "Hello", "This is a message box", btns, true);
+    // lv_obj_center(mbox);
     
     /*
     // Create Center Frame
