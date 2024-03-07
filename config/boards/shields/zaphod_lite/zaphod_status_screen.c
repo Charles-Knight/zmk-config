@@ -51,11 +51,11 @@ lv_obj_t *zmk_display_status_screen() {
                  0, 0);
 #endif
 
-#if IS_ENABLED(CONFIG_ZMK_WIDGET_OUTPUT_STATUS)
+// #if IS_ENABLED(CONFIG_ZMK_WIDGET_OUTPUT_STATUS)
     zmk_widget_output_status_init(&output_status_widget, screen);
     lv_obj_align(zmk_widget_output_status_obj(&output_status_widget), LV_ALIGN_TOP_LEFT, 0,
                  0);
-#endif
+// #endif
 
     center_frame = lv_obj_create(screen);
     lv_obj_align(center_frame, LV_ALIGN_CENTER, 0, 0);
