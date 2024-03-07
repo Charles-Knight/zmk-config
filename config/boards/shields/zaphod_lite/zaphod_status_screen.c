@@ -34,6 +34,7 @@ lv_obj_t *zmk_display_status_screen() {
     lv_obj_t * mbox = lv_msgbox_create(screen, "Hello", "This is a message box", btns, true);
     lv_obj_center(mbox);
     
+    /*
     // Create Center Frame
     center_frame = lv_obj_create(screen);
     lv_obj_align(center_frame, LV_ALIGN_CENTER, 0, 0);
@@ -53,6 +54,7 @@ lv_obj_t *zmk_display_status_screen() {
 
     // Set size of center frame
     lv_obj_set_size(center_frame, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
+    */
 
     return screen;
 }
