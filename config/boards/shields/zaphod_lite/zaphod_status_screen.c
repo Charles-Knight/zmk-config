@@ -31,7 +31,7 @@ lv_obj_t *zmk_display_status_screen() {
 
     // Create Simple Message Box
     static const char * btns[] = {"Apply", "Close", ""};
-    lv_obj_t * mbox = lv_msgbox_create(screen, "Hello", "This is a message box", btns, true);
+    lv_obj_t * mbox = lv_msgbox_create(NULL, "Hello", "This is a message box", btns, true);
     lv_obj_center(mbox);
     
     /*
