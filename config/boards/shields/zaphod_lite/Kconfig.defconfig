@@ -20,7 +20,7 @@ endchoice
 
 config ZMK_DISPLAY_STATUS_SCREEN_CUSTOM
 	select LV_USE_LABEL
-	select LV_USE_IMAGE
+	select LV_USE_IMG
 
 if ZMK_DISPLAY
 
