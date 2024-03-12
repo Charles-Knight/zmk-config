@@ -31,15 +31,15 @@ lv_obj_t *zmk_display_status_screen() {
     lv_obj_add_style(screen, &global_style, LV_PART_MAIN);
 
     // Create Image
+    LV_IMG_DECLARE(img_cogwheel_argb);
+    lv_obj_t * img1 = lv_img_create(lv_scr_act());
+    lv_img_set_src(img1, &img_cogwheel_argb);
+    lv_obj_align(img1, LV_ALIGN_CENTER, 0, -20);
+    lv_obj_set_size(img1, 200, 200);
 
     // lv_obj_t *img = lv_img_create(screen);
     // lv_img_set_src(img, LV_SYMBOL_OK "Accept");
     // lv_obj_align(img, LV_ALIGN_CENTER, 0, 0);
-
-    // Create Simple Message Box
-    const char * btns[] = {"Apply", "Close", ""};
-    lv_obj_t * mbox = lv_msgbox_create(screen, "Hello", "This is a message box", btns, true);
-    lv_obj_center(mbox);
     
     /*
     // Create Center Frame
