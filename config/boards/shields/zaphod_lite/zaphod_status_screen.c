@@ -36,7 +36,7 @@ lv_obj_t *zmk_display_status_screen() {
     
     lv_obj_t * img1 = lv_img_create(screen);
     lv_img_set_src(img1, &mountain);
-    lv_obj_set_size(img1, 75, 125);
+    lv_obj_set_size(img1, 125, 75);
     lv_obj_align(img1, LV_ALIGN_CENTER, 0, 0);
 
     // Create image with symbol and text
