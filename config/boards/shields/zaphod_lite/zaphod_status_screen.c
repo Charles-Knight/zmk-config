@@ -81,19 +81,14 @@ center_frame = lv_obj_create(screen);
 lv_obj_align(center_frame, LV_ALIGN_CENTER, 0, 0);
 lv_obj_center(center_frame);
 
-// Create don't label
 dont_label = lv_label_create(center_frame);
 lv_label_set_text(dont_label, "Don't");
 
-// Create panic label
 panic_label = lv_label_create(center_frame);
-// lv_label_set_long_mode(panic_label, LV_LABEL_LONG_SCROLL_CIRCULAR);
-// lv_obj_set_width(panic_label, 150);
 lv_label_set_text(panic_label, "Panic");
+
 lv_obj_update_layout(dont_label); // otherwise proper height is not known
 lv_obj_set_y(panic_label, lv_obj_get_height(dont_label));
-
-// Set size of center frame
 lv_obj_set_size(center_frame, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
 
 
