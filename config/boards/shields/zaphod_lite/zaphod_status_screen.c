@@ -74,7 +74,7 @@ lv_obj_t *zmk_display_status_screen() {
 // lv_img_set_src(img, LV_SYMBOL_OK "Accept");
 // lv_obj_align(img, LV_ALIGN_CENTER, 0, 0);
 
-/*
+
 // Create Center Frame
 center_frame = lv_obj_create(screen);
 lv_obj_align(center_frame, LV_ALIGN_CENTER, 0, 0);
@@ -94,7 +94,7 @@ lv_obj_set_y(panic_label, lv_obj_get_height(dont_label));
 
 // Set size of center frame
 lv_obj_set_size(center_frame, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
-*/
+
 
 // Layer Status Widget
 #if IS_ENABLED(CONFIG_ZMK_WIDGET_LAYER_STATUS)
@@ -109,5 +109,5 @@ lv_obj_set_size(center_frame, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
     lv_obj_align(zmk_widget_wpm_status_obj(&wpm_status_widget), LV_ALIGN_BOTTOM_RIGHT, -12, 0);
 #endif
 
-    return screen;
+return screen;
 }
