@@ -70,17 +70,17 @@ lv_obj_center(center_frame);
 
 
 // Don't Panic Labels
-dont_label = lv_label_create(center_frame);
-lv_label_set_text(dont_label, "Don't");
-panic_label = lv_label_create(center_frame);
-lv_label_set_text(panic_label, "Panic");
-lv_obj_update_layout(dont_label); // otherwise proper height is not known
-lv_obj_set_y(panic_label, lv_obj_get_height(dont_label));
+// dont_label = lv_label_create(center_frame);
+// lv_label_set_text(dont_label, "Don't");
+// panic_label = lv_label_create(center_frame);
+// lv_label_set_text(panic_label, "Panic");
+// lv_obj_update_layout(dont_label); // otherwise proper height is not known
+// lv_obj_set_y(panic_label, lv_obj_get_height(dont_label));
 
 // Create image with custom image
-// lv_obj_t * img1 = lv_img_create(screen);
-// lv_img_set_src(img1, &mountain);
-// lv_obj_set_size(img1, 125, 75);
+lv_obj_t * img1 = lv_img_create(center_frame);
+lv_img_set_src(img1, &mountain);
+lv_obj_set_size(img1, 125, 75);
 // lv_obj_align(img1, LV_ALIGN_CENTER, 0, 0);
 
 // Create image with symbol and text
