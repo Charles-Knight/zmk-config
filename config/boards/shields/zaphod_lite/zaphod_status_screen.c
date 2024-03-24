@@ -16,6 +16,7 @@
 LV_IMG_DECLARE(mountain);
 LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 
+// Create structs for ZMK Widgets.
 #if IS_ENABLED(CONFIG_ZMK_WIDGET_BATTERY_STATUS)
 static struct zmk_widget_battery_status battery_status_widget;
 #endif
@@ -86,9 +87,9 @@ lv_label_set_text(dont_label, "Don't");
 
 // Create panic label
 panic_label = lv_label_create(center_frame);
-lv_label_set_long_mode(panic_label, LV_LABEL_LONG_SCROLL_CIRCULAR);
-lv_obj_set_width(panic_label, 150);
-lv_label_set_text(panic_label, "This is some longer text");
+// lv_label_set_long_mode(panic_label, LV_LABEL_LONG_SCROLL_CIRCULAR);
+// lv_obj_set_width(panic_label, 150);
+lv_label_set_text(panic_label, "Panic");
 lv_obj_update_layout(dont_label); // otherwise proper height is not known
 lv_obj_set_y(panic_label, lv_obj_get_height(dont_label));
 
