@@ -15,6 +15,7 @@
 #define FUN  3
 #define ADJ  4
 #define WIN  5
+#define WIN2 6
 
 / {
         behaviors {
@@ -179,7 +180,17 @@
                                         &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U &kp I     &kp O   &kp P
                                         &kp A &kp S &kp D &kp F &kp G   &kp H &kp J &kp K     &kp L   &kp SEMI
                                         &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M &kp COMMA &kp DOT &kp FSLH
-                                                &lt NUM TAB &kp LSHFT   &lt SCND SPACE &lt ADJ BSPC
+                                                &lt NUM TAB &kp LSHFT   &lt WIN2 SPACE &lt ADJ BSPC
+                                >;
+                };
+
+                win2_layer {
+                        display-name = "Win2";
+                        bindings = <
+                                        &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U &kp I     &kp O   &kp P
+                                        &kp A &kp S &kp D &kp F &kp G   &kp H &kp J &kp K     &kp L   &kp SEMI
+                                        &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M &kp COMMA &kp DOT &kp FSLH
+                                                &lt NUM TAB &kp LSHFT   &kp SPACE &lt ADJ BSPC
                                 >;
                 };
         };
