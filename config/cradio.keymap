@@ -26,6 +26,7 @@
         combos {
                 compatible = "zmk,combos";
                 
+                // Left Hand Combos
                 combo_escape {
                         timeout-ms = <50>;
                         key-positions = <11 12>;
@@ -38,6 +39,25 @@
                         bindings = <&kp TAB>;
                 };
 
+                combo_lctrl {
+                        timeout-ms = <50>;
+                        key-positions = <11 21>;
+                        bindings = <&kp LCTRL>;
+                };
+
+                combo_lalt {
+                        timeout-ms = <50>;
+                        key-positions = <12 22>;
+                        bindings = <&kp LALT>;
+                };
+
+                combo_lgui {
+                        timeout-ms = <50>;
+                        key-positions = <13 23>;
+                        bindings = <&kp LGUI>;
+                };
+
+                // Right Hand Combos
                 combo_backspace {
                         timeout-ms = <50>;
                         key-positions = <16 17>;
@@ -54,6 +74,24 @@
                         timeout-ms = <50>;
                         key-positions = <16 17 18>;
                         bindings = <&caps_word>;
+                };
+
+                combo_rctrl {
+                        timeout-ms = <50>;
+                        key-positions = <16 26>;
+                        bindings = <&kp LCTRL>;
+                };
+
+                combo_ralt {
+                        timeout-ms = <50>;
+                        key-positions = <17 27>;
+                        bindings = <&kp LALT>;
+                };
+
+                combo_rgui {
+                        timeout-ms = <50>;
+                        key-positions = <18 28>;
+                        bindings = <&kp LGUI>;
                 };
         };
         
