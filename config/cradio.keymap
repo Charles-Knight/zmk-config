@@ -76,22 +76,22 @@
                         bindings = <&caps_word>;
                 };
 
-                combo_rctrl {
+                combo_rgui {
                         timeout-ms = <50>;
                         key-positions = <16 26>;
-                        bindings = <&kp LCTRL>;
+                        bindings = <&kp RGUI>;
                 };
 
                 combo_ralt {
                         timeout-ms = <50>;
                         key-positions = <17 27>;
-                        bindings = <&kp LALT>;
+                        bindings = <&kp RALT>;
                 };
 
-                combo_rgui {
+                combo_rctrl {
                         timeout-ms = <50>;
                         key-positions = <18 28>;
-                        bindings = <&kp LGUI>;
+                        bindings = <&kp RCTRL>;
                 };
         };
         
