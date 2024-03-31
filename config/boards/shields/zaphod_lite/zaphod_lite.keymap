@@ -79,7 +79,7 @@
                         timeout-ms = <50>;
                         key-positions = <16 17 18>;
                         bindings = <&kp LA(BACKSPACE)>;
-                        layers = <1>;
+                        layers = <0>;
                 };
 
                 combo_delete_word_win{
