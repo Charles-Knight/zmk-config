@@ -47,19 +47,19 @@
 
                 combo_lctrl {
                         timeout-ms = <50>;
-                        key-positions = <11 21>;
+                        key-positions = <1 11>;
                         bindings = <&kp LCTRL>;
                 };
 
                 combo_lalt {
                         timeout-ms = <50>;
-                        key-positions = <12 22>;
+                        key-positions = <2 12>;
                         bindings = <&kp LALT>;
                 };
 
                 combo_lgui {
                         timeout-ms = <50>;
-                        key-positions = <13 23>;
+                        key-positions = <3 13>;
                         bindings = <&kp LGUI>;
                 };
 
@@ -98,19 +98,19 @@
 
                 combo_rgui {
                         timeout-ms = <50>;
-                        key-positions = <16 26>;
+                        key-positions = <6 16>;
                         bindings = <&kp RGUI>;
                 };
 
                 combo_ralt {
                         timeout-ms = <50>;
-                        key-positions = <17 27>;
+                        key-positions = <7 17>;
                         bindings = <&kp RALT>;
                 };
 
                 combo_rctrl {
                         timeout-ms = <50>;
-                        key-positions = <18 28>;
+                        key-positions = <8 18>;
                         bindings = <&kp RCTRL>;
                 };
 
