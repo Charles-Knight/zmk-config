@@ -28,6 +28,98 @@
 
         combos {
                 compatible = "zmk,combos";
+
+                // Left Hand Combos
+                combo_escape {
+                        timeout-ms = <50>;
+                        key-positions = <14 15>;
+                        bindings = <&kp ESC>;
+                };
+
+                combo_tab {
+                        timeout-ms = <50>;
+                        key-positions = <15 16>;
+                        bindings = <&kp TAB>;
+                };
+
+                combo_lctrl {
+                        timeout-ms = <50>;
+                        key-positions = <2 14>;
+                        bindings = <&kp LCTRL>;
+                };
+
+                combo_lalt {
+                        timeout-ms = <50>;
+                        key-positions = <3 15>;
+                        bindings = <&kp LALT>;
+                };
+
+                combo_lgui {
+                        timeout-ms = <50>;
+                        key-positions = <4 16>;
+                        bindings = <&kp LGUI>;
+                };
+
+                // Right Hand Combos
+                combo_backspace {
+                        timeout-ms = <50>;
+                        key-positions = <19 20>;
+                        bindings = <&bspc_del>;
+                };
+
+                combo_enter {
+                        timeout-ms = <50>;
+                        key-positions = <20 21>;
+                        bindings = <&kp ENTER>;
+                };
+                
+                // TODO: Update this combo after you add windows layer
+                combo_delete_word_mac{
+                        timeout-ms = <50>;
+                        key-positions = <19 20 21>;
+                        bindings = <&kp LA(BACKSPACE)>;
+                        //layers = <MAC>;
+                };
+
+                //TODO: Update this combo after you add windows layer
+                // combo_delete_word_win{
+                //         timeout-ms = <50>;
+                //         key-positions = <19 20 21>;
+                //         bindings = <&kp LC(BACKSPACE)>;
+                //         layers = <WIN>;
+                // };
+
+                combo_capsword{
+                        timeout-ms = <50>;
+                        key-positions = <7 8 9>;
+                        bindings = <&caps_word>;
+                };
+
+                combo_rgui {
+                        timeout-ms = <50>;
+                        key-positions = <7 19>;
+                        bindings = <&kp RGUI>;
+                };
+
+                combo_ralt {
+                        timeout-ms = <50>;
+                        key-positions = <8 20>;
+                        bindings = <&kp RALT>;
+                };
+
+                combo_rctrl {
+                        timeout-ms = <50>;
+                        key-positions = <9 21>;
+                        bindings = <&kp RCTRL>;
+                };
+
+                // TODO: Update this combo after you add windows layer
+                // combo_layout_change {
+                //         timeout-ms = <50>;
+                //         key-positions = <30 33>;
+                //         bindings = <&tog WIN>;
+                // };
+
                 combo_game_layer {
                         timeout-ms = <50>;
                         key-positions = <11 35>;
@@ -55,9 +147,9 @@
                 secondary_layer {
                         display-name = "Nav";
                         bindings = <
-                                &none &kp EQUAL &kp ESC  &kp UP   &kp TAB   &kp LBKT    &kp RBKT   &bspc_del &kp GRAVE &kp ENTER &kp BSLH &none
-                                &none &kp MINUS &kp LEFT &kp DOWN &kp RIGHT &none       &caps_word &sk LGUI  &sk LALT  &sk LCTRL &kp SQT  &none
-                                &none &kp N1    &kp N2   &kp N3   &kp N4    &kp N5      &kp N6     &kp N7    &kp N8    &kp N9    &kp N0   &none
+                                &none &kp EQUAL &kp HOME &kp UP   &kp END   &kp LBKT    &kp RBKT   &none    &kp GRAVE &none     &kp BSLH &none
+                                &none &kp MINUS &kp LEFT &kp DOWN &kp RIGHT &none       &caps_word &sk LGUI &sk LALT  &sk LCTRL &kp SQT  &none
+                                &none &kp N1    &kp N2   &kp N3   &kp N4    &kp N5      &kp N6     &kp N7   &kp N8    &kp N9    &kp N0   &none
                                                              &trans &trans &trans     &trans &trans &trans
                         >;
                 };
