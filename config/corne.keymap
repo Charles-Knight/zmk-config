@@ -74,21 +74,19 @@
                         bindings = <&kp ENTER>;
                 };
                 
-                // TODO: Update this combo after you add windows layer
                 combo_delete_word_mac{
                         timeout-ms = <50>;
                         key-positions = <19 20 21>;
                         bindings = <&kp LA(BACKSPACE)>;
-                        //layers = <MAC>;
+                        layers = <MAC_L>;
                 };
 
-                //TODO: Update this combo after you add windows layer
-                // combo_delete_word_win{
-                //         timeout-ms = <50>;
-                //         key-positions = <19 20 21>;
-                //         bindings = <&kp LC(BACKSPACE)>;
-                //         layers = <WIN>;
-                // };
+                combo_delete_word_win{
+                        timeout-ms = <50>;
+                        key-positions = <19 20 21>;
+                        bindings = <&kp LC(BACKSPACE)>;
+                        layers = <WIN_L>;
+                };
 
                 combo_capsword{
                         timeout-ms = <50>;
