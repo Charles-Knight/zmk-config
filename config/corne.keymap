@@ -114,7 +114,6 @@
                         bindings = <&kp RCTRL>;
                 };
 
-                TODO: Update this combo after you add windows layer
                 combo_layout_change {
                         timeout-ms = <50>;
                         key-positions = <37 40>;
