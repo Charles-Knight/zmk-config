@@ -136,9 +136,9 @@
                 mac_layer {
                         display-name = "Mac";
                         bindings = <
-                                &kp EQUAL &kp Q &kp W &kp E &kp R &kp T     &kp Y &kp U &kp I     &kp O   &kp P    &kp BSLH
-                                &kp MINUS &kp A &kp S &kp D &kp F &kp G     &kp H &kp J &kp K     &kp L   &kp SEMI &kp SQT
-                                &kp LBKT  &kp Z &kp X &kp C &kp V &kp B     &kp N &kp M &kp COMMA &kp DOT &kp FSLH &kp RBKT
+                                &kp ESC   &kp Q &kp W &kp E &kp R &kp T     &kp Y &kp U &kp I     &kp O   &kp P    &kp BSPC
+                                &kp TAB   &kp A &kp S &kp D &kp F &kp G     &kp H &kp J &kp K     &kp L   &kp SEMI &kp SQT
+                                &kp LSHFT &kp Z &kp X &kp C &kp V &kp B     &kp N &kp M &kp COMMA &kp DOT &kp FSLH &kp ENTER
                                             &kp LALT &kp TAB &kp LSHIFT     &lt SCND_L SPACE &lt AJST_L GRAVE &kp LGUI
                         >;
                 };
@@ -146,9 +146,9 @@
                 win_layer {
                         display-name = "Win";
                         bindings = <
-                                &kp EQUAL &kp Q &kp W &kp E &kp R &kp T     &kp Y &kp U &kp I     &kp O   &kp P    &kp BSLH
-                                &kp MINUS &kp A &kp S &kp D &kp F &kp G     &kp H &kp J &kp K     &kp L   &kp SEMI &kp SQT
-                                &kp LBKT  &kp Z &kp X &kp C &kp V &kp B     &kp N &kp M &kp COMMA &kp DOT &kp FSLH &kp RBKT
+                                &kp ESC   &kp Q &kp W &kp E &kp R &kp T     &kp Y &kp U &kp I     &kp O   &kp P    &kp BSPC
+                                &kp TAB   &kp A &kp S &kp D &kp F &kp G     &kp H &kp J &kp K     &kp L   &kp SEMI &kp SQT
+                                &kp LSHFT &kp Z &kp X &kp C &kp V &kp B     &kp N &kp M &kp COMMA &kp DOT &kp FSLH &kp ENTER
                                             &kp LALT &kp TAB &kp LSHIFT     &lt SCND_L SPACE &lt AJST_L GRAVE &kp LGUI
                         >;
                 };
