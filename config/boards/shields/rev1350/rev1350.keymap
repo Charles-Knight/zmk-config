@@ -30,39 +30,111 @@
 
         combos {
                 compatible = "zmk,combos";
-                combo_game_layer {
-                        timeout-ms = <50>;
-                        key-positions = <11 35>;
-                        bindings = <&tog GAME_L>;
-                };
+
+                // Left Hand Combos
                 combo_escape {
                         timeout-ms = <50>;
                         key-positions = <14 15>;
                         bindings = <&kp ESC>;
+                        layers = <MAC_L WIN_L SCND_L FUNC_L>;
                 };
 
                 combo_tab {
                         timeout-ms = <50>;
                         key-positions = <15 16>;
                         bindings = <&kp TAB>;
+                        layers = <MAC_L WIN_L SCND_L FUNC_L>;
                 };
 
+                combo_lctrl {
+                        timeout-ms = <50>;
+                        key-positions = <2 14>;
+                        bindings = <&kp LCTRL>;
+                        layers = <MAC_L WIN_L SCND_L FUNC_L>;
+                };
+
+                combo_lalt {
+                        timeout-ms = <50>;
+                        key-positions = <3 15>;
+                        bindings = <&kp LALT>;
+                        layers = <MAC_L WIN_L SCND_L FUNC_L>;
+                };
+
+                combo_lgui {
+                        timeout-ms = <50>;
+                        key-positions = <4 16>;
+                        bindings = <&kp LGUI>;
+                        layers = <MAC_L WIN_L SCND_L FUNC_L>;
+                };
+
+                // Right Hand Combos
                 combo_backspace {
                         timeout-ms = <50>;
                         key-positions = <19 20>;
                         bindings = <&bspc_del>;
+                        layers = <MAC_L WIN_L SCND_L FUNC_L>;
                 };
 
                 combo_enter {
                         timeout-ms = <50>;
                         key-positions = <20 21>;
                         bindings = <&kp ENTER>;
+                        layers = <MAC_L WIN_L SCND_L FUNC_L>;
                 };
                 
-                combo_capsword{
+                combo_delete_word_mac{
                         timeout-ms = <50>;
                         key-positions = <19 20 21>;
+                        bindings = <&kp LA(BACKSPACE)>;
+                        layers = <MAC_L>;
+                };
+
+                combo_delete_word_win{
+                        timeout-ms = <50>;
+                        key-positions = <19 20 21>;
+                        bindings = <&kp LC(BACKSPACE)>;
+                        layers = <WIN_L>;
+                };
+
+                combo_capsword{
+                        timeout-ms = <50>;
+                        key-positions = <7 8 9>;
                         bindings = <&caps_word>;
+                        layers = <MAC_L WIN_L SCND_L FUNC_L>;
+                };
+
+                combo_rgui {
+                        timeout-ms = <50>;
+                        key-positions = <7 19>;
+                        bindings = <&kp RGUI>;
+                        layers = <MAC_L WIN_L SCND_L FUNC_L>;
+                };
+
+                combo_ralt {
+                        timeout-ms = <50>;
+                        key-positions = <8 20>;
+                        bindings = <&kp RALT>;
+                        layers = <MAC_L WIN_L SCND_L FUNC_L>;
+                };
+
+                combo_rctrl {
+                        timeout-ms = <50>;
+                        key-positions = <9 21>;
+                        bindings = <&kp RCTRL>;
+                        layers = <MAC_L WIN_L SCND_L FUNC_L>;
+                };
+
+                combo_layout_change {
+                        timeout-ms = <50>;
+                        key-positions = <36 40>;
+                        bindings = <&tog WIN_L>;
+                        layers = <MAC_L WIN_L>;
+                };
+
+                combo_game_layer {
+                        timeout-ms = <50>;
+                        key-positions = <11 35>;
+                        bindings = <&tog GAME_L>;
                 };
         };
 
