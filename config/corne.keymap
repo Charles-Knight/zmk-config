@@ -156,10 +156,10 @@
                 secondary_layer {
                         display-name = "Nav";
                         bindings = <
-                                &none &none  &kp HOME &kp UP   &kp END   &none      &none  &none    &none    &none     &none  &none
-                                &none &none  &kp LEFT &kp DOWN &kp RIGHT &none      &none  &sk LGUI &sk LALT &sk LCTRL &none  &none
-                                &none &kp N1 &kp N2   &kp N3   &kp N4    &kp N5     &kp N6 &kp N7   &kp N8   &kp N9    &kp N0 &none
-                                                           &trans &trans &trans     &trans &trans &trans
+                                &none &kp EQUAL &kp HOME &kp UP   &kp END   &kp LBKT     &kp RBKT &none    &none    &none     &kp BSLH &none
+                                &none &kp MINUS &kp LEFT &kp DOWN &kp RIGHT &none        &none    &sk LGUI &sk LALT &sk LCTRL &kp SQT  &none
+                                &none &kp N1    &kp N2   &kp N3   &kp N4    &kp N5       &kp N6   &kp N7   &kp N8   &kp N9    &kp N0   &none
+                                                                &trans &trans &trans     &trans &trans &trans
                         >;
                 };
 
