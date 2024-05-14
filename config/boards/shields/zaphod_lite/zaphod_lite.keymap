@@ -172,28 +172,28 @@
 
                 combo_left_desktop_mac {
                         timeout-ms = <50>;
-                        key-positions = <17 27>;
+                        key-positions = <26 27>;
                         bindings = <&kp LC(LEFT_ARROW)>;
                         layers = <MAC>;
                 };
 
                 combo_right_desktop_mac {
                         timeout-ms = <50>;
-                        key-positions = <18 28>;
+                        key-positions = <28 29>;
                         bindings = <&kp LC(RIGHT_ARROW)>;
                         layers = <MAC>;
                 };
 
                 combo_left_desktop_win {
                         timeout-ms = <50>;
-                        key-positions = <17 27>;
+                        key-positions = <26 27>;
                         bindings = <&kp LC(LG(LEFT_ARROW))>;
                         layers = <WIN>;
                 };
 
                 combo_right_desktop_win {
                         timeout-ms = <50>;
-                        key-positions = <18 28>;
+                        key-positions = <28 29>;
                         bindings = <&kp LC(LG(RIGHT_ARROW))>;
                         layers = <WIN>;
                 };
