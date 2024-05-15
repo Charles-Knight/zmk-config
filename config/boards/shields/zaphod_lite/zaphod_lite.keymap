@@ -179,7 +179,7 @@
 
                 combo_right_desktop_mac {
                         timeout-ms = <50>;
-                        key-positions = <28 29>;
+                        key-positions = <27 28>;
                         bindings = <&kp LC(RIGHT_ARROW)>;
                         layers = <MAC>;
                 };
@@ -193,7 +193,7 @@
 
                 combo_right_desktop_win {
                         timeout-ms = <50>;
-                        key-positions = <28 29>;
+                        key-positions = <27 28>;
                         bindings = <&kp LC(LG(RIGHT_ARROW))>;
                         layers = <WIN>;
                 };
