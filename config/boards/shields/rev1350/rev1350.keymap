@@ -124,6 +124,34 @@
                         layers = <MAC_L WIN_L SCND_L FUNC_L>;
                 };
 
+                combo_left_desktop_mac {
+                        timeout-ms = <50>;
+                        key-positions = <31 32>;
+                        bindings = <&kp LC(LEFT_ARROW)>;
+                        layers = <MAC_L>;
+                };
+
+                combo_right_desktop_mac {
+                        timeout-ms = <50>;
+                        key-positions = <32 33>;
+                        bindings = <&kp LC(RIGHT_ARROW)>;
+                        layers = <MAC_L>;
+                };
+
+                combo_left_desktop_win {
+                        timeout-ms = <50>;
+                        key-positions = <31 32>;
+                        bindings = <&kp LC(LG(LEFT_ARROW))>;
+                        layers = <WIN_L>;
+                };
+
+                combo_right_desktop_win {
+                        timeout-ms = <50>;
+                        key-positions = <32 33>;
+                        bindings = <&kp LC(LG(RIGHT_ARROW))>;
+                        layers = <WIN_L>;
+                };
+
                 combo_layout_change {
                         timeout-ms = <50>;
                         key-positions = <36 40>;
