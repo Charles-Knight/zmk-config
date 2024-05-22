@@ -58,6 +58,62 @@
                         bindings = <&kp LGUI>;
                 };
 
+                combo_undo_mac {
+                        timeout-ms = <50>;
+                        key-positions = <10 20>;
+                        bindings = <&kp LG(Z)>;
+                        layers = <MAC>;
+                };
+
+                combo_undo_win {
+                        timeout-ms = <50>;
+                        key-positions = <10 20>;
+                        bindings = <&kp LC(Z)>;
+                        layers = <WIN>;
+                };
+
+                combo_cut_mac {
+                        timeout-ms = <50>;
+                        key-positions = <11 21>;
+                        bindings = <&kp LG(X)>;
+                        layers = <MAC>;
+                };
+
+                combo_cut_win {
+                        timeout-ms = <50>;
+                        key-positions = <11 21>;
+                        bindings = <&kp LC(X)>;
+                        layers = <WIN>;
+                };
+
+                combo_copy_mac {
+                        timeout-ms = <50>;
+                        key-positions = <12 22>;
+                        bindings = <&kp LG(C)>;
+                        layers = <MAC>;
+                };
+
+                combo_copy_win {
+                        timeout-ms = <50>;
+                        key-positions = <12 22>;
+                        bindings = <&kp LC(C)>;
+                        layers = <WIN>;
+                };
+
+                combo_paste_mac {
+                        timeout-ms = <50>;
+                        key-positions = <13 23>;
+                        bindings = <&kp LG(V)>;
+                        layers = <MAC>;
+                };
+
+                combo_paste_win {
+                        timeout-ms = <50>;
+                        key-positions = <13 23>;
+                        bindings = <&kp LC(V)>;
+                        layers = <WIN>;
+                };
+
                 // Right Hand Combos
                 combo_backspace {
                         timeout-ms = <50>;
@@ -107,6 +163,34 @@
                         timeout-ms = <50>;
                         key-positions = <8 18>;
                         bindings = <&kp RCTRL>;
+                };
+
+                combo_left_desktop_mac {
+                        timeout-ms = <50>;
+                        key-positions = <26 27>;
+                        bindings = <&kp LC(LEFT_ARROW)>;
+                        layers = <MAC>;
+                };
+
+                combo_right_desktop_mac {
+                        timeout-ms = <50>;
+                        key-positions = <27 28>;
+                        bindings = <&kp LC(RIGHT_ARROW)>;
+                        layers = <MAC>;
+                };
+
+                combo_left_desktop_win {
+                        timeout-ms = <50>;
+                        key-positions = <26 27>;
+                        bindings = <&kp LC(LG(LEFT_ARROW))>;
+                        layers = <WIN>;
+                };
+
+                combo_right_desktop_win {
+                        timeout-ms = <50>;
+                        key-positions = <27 28>;
+                        bindings = <&kp LC(LG(RIGHT_ARROW))>;
+                        layers = <WIN>;
                 };
 
                 combo_layout_change {
