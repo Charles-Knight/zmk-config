@@ -9,8 +9,9 @@
 #define WIN  1
 #define SCND 2
 #define NUM  3
-#define FUN  4
-#define ADJ  5
+#define SYM  4
+#define FUN  5
+#define ADJ  6
 
 / {
         behaviors {
@@ -240,6 +241,16 @@
                                 &sk LSHFT &sk LCTRL &sk LALT &sk LGUI &none   &kp MINUS &kp N4 &kp N5 &kp N6 &kp SQT 
                                 &none     &none     &none    &none    &none   &kp N0    &kp N1 &kp N2 &kp N3 &none 
                                                               &trans &trans   &trans &trans
+                        >;
+                };
+
+                symbol_layer {
+                        display-name = "Sym";
+                        bindings = <
+                                &none &none &none &none &none   &none &none &none &none &none
+                                &none &none &none &none &none   &none &none &none &none &none
+                                &none &none &none &none &none   &none &none &none &none &none
+                                                &trans &trans   &trans &trans
                         >;
                 };
 
