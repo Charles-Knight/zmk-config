@@ -13,9 +13,9 @@
 #define WIN  1
 #define SCND 2
 #define NUM  3
-#define FUN  4
-#define ADJ  5
-
+#define SYM  4
+#define FUN  5
+#define ADJ  6
 
 / {
         behaviors {
@@ -241,10 +241,20 @@
                 number_layer {
                         display-name = "Num";
                         bindings = <
-                                &none     &kp GRAVE &kp LBKT &kp RBKT &none   &kp EQUAL &kp N7 &kp N8 &kp N9 &kp BSLH
-                                &sk LSHFT &sk LCTRL &sk LALT &sk LGUI &none   &kp MINUS &kp N4 &kp N5 &kp N6 &kp SQT 
-                                &none     &none     &none    &none    &none   &kp N0    &kp N1 &kp N2 &kp N3 &none 
+                                &kp FSLH     &kp N7 &kp N8 &kp N9 &kp MINUS   &none &none &none &none &none
+                                &kp ASTERISK &kp N4 &kp N5 &kp N6 &kp PLUS    &none &none &none &none &none
+                                &kp DOT      &kp N1 &kp N2 &kp N3 &kp N0      &none &none &none &none &none
                                                               &trans &trans   &trans &trans
+                        >;
+                };
+
+                symbol_layer {
+                        display-name = "Sym";
+                        bindings = <
+                                &none &none &none &none &none   &none &none &none &none &none
+                                &none &none &none &none &none   &none &none &none &none &none
+                                &none &none &none &none &none   &none &none &none &none &none
+                                                &trans &trans   &trans &trans
                         >;
                 };
 
