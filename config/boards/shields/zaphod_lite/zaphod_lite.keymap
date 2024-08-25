@@ -63,6 +63,12 @@
                         bindings = <&kp LGUI>;
                 };
 
+                combo_lglobe {
+                        timeout-ms = <50>;
+                        key-positions = <4 14>;
+                        bindings = <&kp GLOBE>;
+                };
+
                 combo_undo_mac {
                         timeout-ms = <50>;
                         key-positions = <10 20>;
@@ -150,6 +156,12 @@
                         timeout-ms = <50>;
                         key-positions = <6 7 8>;
                         bindings = <&caps_word>;
+                };
+
+                combo_rglobe {
+                        timeout-ms = <50>;
+                        key-positions = <5 15>;
+                        bindings = <&kp GLOBE>;
                 };
 
                 combo_rgui {
