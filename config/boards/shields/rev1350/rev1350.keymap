@@ -29,6 +29,9 @@
                 };
         };
 
+        // Todo: New Combos
+        //       Undo, Cut, Copy, Paste
+        //       Macro to insert VINs
         combos {
                 compatible = "zmk,combos";
 
