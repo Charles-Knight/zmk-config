@@ -27,6 +27,13 @@
                         mods = <(MOD_LSFT|MOD_RSFT)>;
                         keep-mods = <(MOD_RSFT)>;
                 };
+
+                td_num_layer: tap_dance_num_layer {
+                        compatible = "zmk,behavior-tap-dance";
+                        #binding-cells = <0>;
+                        tapping-term-ms = <200>;
+                        bindings = <&mo NUM>, <&tog NUM>;
+                };
         };
 
         combos {
