@@ -1,9 +1,13 @@
-// Copyright (c) 2022 The ZMK Contributors
-// SPDX-License-Identifier: MIT
+/*
+ * Copyright (c) 2021 Pete Johanson
+ *
+ * SPDX-License-Identifier: MIT
+ */
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
 
 #define MAC  0
 #define WIN  1
@@ -22,6 +26,13 @@
                         bindings = <&kp BACKSPACE>, <&kp DELETE>;
                         mods = <(MOD_LSFT|MOD_RSFT)>;
                         keep-mods = <(MOD_RSFT)>;
+                };
+
+                td_num_layer: tap_dance_num_layer {
+                        compatible = "zmk,behavior-tap-dance";
+                        #binding-cells = <0>;
+                        tapping-term-ms = <200>;
+                        bindings = <&mo NUM>, <&tog NUM>;
                 };
         };
 
@@ -58,8 +69,8 @@
                         key-positions = <3 13>;
                         bindings = <&kp LGUI>;
                 };
-				
-				combo_lglobe {
+
+                combo_lglobe {
                         timeout-ms = <50>;
                         key-positions = <4 14>;
                         bindings = <&kp GLOBE>;
@@ -153,8 +164,8 @@
                         key-positions = <6 7 8>;
                         bindings = <&caps_word>;
                 };
-				
-				combo_rglobe {
+
+                combo_rglobe {
                         timeout-ms = <50>;
                         key-positions = <5 15>;
                         bindings = <&kp GLOBE>;
@@ -222,7 +233,7 @@
                                         &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U &kp I     &kp O   &kp P
                                         &kp A &kp S &kp D &kp F &kp G   &kp H &kp J &kp K     &kp L   &kp SEMI
                                         &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M &kp COMMA &kp DOT &kp FSLH
-                                                &lt NUM TAB &kp LSHFT   &lt SCND SPACE &lt ADJ BSPC
+                                                &lt ADJ TAB &kp LSHFT   &lt SCND SPACE &td_num_layer
                                 >;
                 };
 
@@ -232,27 +243,27 @@
                                         &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U &kp I     &kp O   &kp P
                                         &kp A &kp S &kp D &kp F &kp G   &kp H &kp J &kp K     &kp L   &kp SEMI
                                         &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M &kp COMMA &kp DOT &kp FSLH
-                                                &lt NUM TAB &kp LSHFT   &lt SCND SPACE &lt ADJ BSPC
+                                                &lt ADJ TAB &kp LSHFT   &lt SCND SPACE &td_num_layer
                                 >;
                 };
 
                 secondary_layer {
                         display-name = "2nd";
                         bindings = <
-                                &kp EQUAL &kp HOME &kp UP   &kp END   &kp LBKT    &kp RBKT  &none    &kp GRAVE &none     &kp BSLH
-                                &kp MINUS &kp LEFT &kp DOWN &kp RIGHT &none       &sk GLOBE &sk LGUI &sk LALT  &sk LCTRL &kp SQT
-                                &kp N1    &kp N2   &kp N3   &kp N4    &kp N5      &kp N6    &kp N7   &kp N8    &kp N9    &kp N0
-                                                                  &trans &trans   &trans &trans
+                                &kp EQUAL &kp HOME &kp UP   &kp END   &kp LBKT   &kp RBKT &none  &kp GRAVE &none  &kp BSLH
+                                &kp MINUS &kp LEFT &kp DOWN &kp RIGHT &none      &none    &none  &none     &none  &kp SQT
+                                &kp N1    &kp N2   &kp N3   &kp N4    &kp N5     &kp N6   &kp N7 &kp N8    &kp N9 &kp N0
+                                                                 &trans &trans   &trans &trans
                         >;
                 };
 
                 number_layer {
                         display-name = "Num";
                         bindings = <
-                                &kp FSLH     &kp N7 &kp N8 &kp N9 &kp MINUS   &none &none &none &none &none
-                                &kp ASTERISK &kp N4 &kp N5 &kp N6 &kp PLUS    &none &none &none &none &none
-                                &kp DOT      &kp N1 &kp N2 &kp N3 &kp N0      &none &none &none &none &none
-                                                              &trans &trans   &trans &trans
+                                   &kp FSLH  &kp N7 &kp N8 &kp N9 &kp MINUS   &none &none &none &none &none
+                                   &kp ASTRK &kp N4 &kp N5 &kp N6 &kp PLUS    &none &none &none &none &none
+                                   &kp COMMA &kp N1 &kp N2 &kp N3 &kp DOT     &none &none &none &none &none
+                                                               &kp N0 &none   &trans &trans
                         >;
                 };
 
