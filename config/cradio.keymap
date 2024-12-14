@@ -242,16 +242,28 @@
                         bindings = <&kp GRAVE>;
                 };
 
-                combo_backslash {
+                combo_equal {
+                        timeout-ms = <50>;
+                        key-positions = <17 27>;
+                        bindings = <&kp MINUS>;
+                };
+
+                combo_minus {
                         timeout-ms = <50>;
                         key-positions = <18 28>;
-                        bindings = <&kp BSLH>;
+                        bindings = <&kp EQUAL>;
                 };
 
                 combo_single_quote {
                         timeout-ms = <50>;
                         key-positions = <19 29>;
                         bindings = <&kp SQT>;
+                };
+
+                combo_backslash {
+                        timeout-ms = <50>;
+                        key-positions = <9 19>;
+                        bindings = <&kp BSLH>;
                 };
         };
         
