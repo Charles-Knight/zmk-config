@@ -147,22 +147,16 @@
                 
                 combo_delete_word_mac{
                         timeout-ms = <50>;
-                        key-positions = <16 17 18>;
+                        key-positions = <6 7 8>;
                         bindings = <&kp LA(BACKSPACE)>;
                         layers = <MAC>;
                 };
 
                 combo_delete_word_win{
                         timeout-ms = <50>;
-                        key-positions = <16 17 18>;
+                        key-positions = <6 7 8>;
                         bindings = <&kp LC(BACKSPACE)>;
                         layers = <WIN>;
-                };
-
-                combo_capsword{
-                        timeout-ms = <50>;
-                        key-positions = <6 7 8>;
-                        bindings = <&caps_word>;
                 };
 
                 combo_rglobe {
@@ -221,6 +215,49 @@
                         timeout-ms = <50>;
                         key-positions = <30 33>;
                         bindings = <&tog WIN>;
+                };
+
+                // Other Combos
+                combo_left_bracket {
+                        timeout-ms = <50>;
+                        key-positions = <14 24>;
+                        bindings = <&kp LBKT>;
+                };
+
+                combo_right_bracket {
+                        timeout-ms = <50>;
+                        key-positions = <15 25>;
+                        bindings = <&kp RBKT>;
+                };
+
+                combo_grave {
+                        timeout-ms = <50>;
+                        key-positions = <16 26>;
+                        bindings = <&kp GRAVE>;
+                };
+
+                combo_equal {
+                        timeout-ms = <50>;
+                        key-positions = <17 27>;
+                        bindings = <&kp MINUS>;
+                };
+
+                combo_minus {
+                        timeout-ms = <50>;
+                        key-positions = <18 28>;
+                        bindings = <&kp EQUAL>;
+                };
+
+                combo_single_quote {
+                        timeout-ms = <50>;
+                        key-positions = <19 29>;
+                        bindings = <&kp SQT>;
+                };
+
+                combo_backslash {
+                        timeout-ms = <50>;
+                        key-positions = <9 19>;
+                        bindings = <&kp BSLH>;
                 };
         };
         
