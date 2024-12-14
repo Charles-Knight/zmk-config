@@ -10,7 +10,7 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define MAC  0
-#define WIN  1sdetqe
+#define WIN  1
 #define SCND 2
 #define NUM  3
 #define SYM  4
