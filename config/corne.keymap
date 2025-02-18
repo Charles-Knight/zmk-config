@@ -10,7 +10,6 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 
 #define MAC_L 0
-#define WIN_L  1
 #define SCND_L 2
 #define FUNC_L 3
 #define AJST_L 4
@@ -35,35 +34,35 @@
                         timeout-ms = <50>;
                         key-positions = <14 15>;
                         bindings = <&kp ESC>;
-                        layers = <MAC_L WIN_L SCND_L FUNC_L>;
+                        layers = <MAC_L SCND_L FUNC_L>;
                 };
 
                 combo_tab {
                         timeout-ms = <50>;
                         key-positions = <15 16>;
                         bindings = <&kp TAB>;
-                        layers = <MAC_L WIN_L SCND_L FUNC_L>;
+                        layers = <MAC_L SCND_L FUNC_L>;
                 };
 
                 combo_lctrl {
                         timeout-ms = <50>;
                         key-positions = <2 14>;
                         bindings = <&kp LCTRL>;
-                        layers = <MAC_L WIN_L SCND_L FUNC_L>;
+                        layers = <MAC_L SCND_L FUNC_L>;
                 };
 
                 combo_lalt {
                         timeout-ms = <50>;
                         key-positions = <3 15>;
                         bindings = <&kp LALT>;
-                        layers = <MAC_L WIN_L SCND_L FUNC_L>;
+                        layers = <MAC_L SCND_L FUNC_L>;
                 };
 
                 combo_lgui {
                         timeout-ms = <50>;
                         key-positions = <4 16>;
                         bindings = <&kp LGUI>;
-                        layers = <MAC_L WIN_L SCND_L FUNC_L>;
+                        layers = <MAC_L SCND_L FUNC_L>;
                 };
 
                 // Right Hand Combos
@@ -71,14 +70,14 @@
                         timeout-ms = <50>;
                         key-positions = <19 20>;
                         bindings = <&bspc_del>;
-                        layers = <MAC_L WIN_L SCND_L FUNC_L>;
+                        layers = <MAC_L SCND_L FUNC_L>;
                 };
 
                 combo_enter {
                         timeout-ms = <50>;
                         key-positions = <20 21>;
                         bindings = <&kp ENTER>;
-                        layers = <MAC_L WIN_L SCND_L FUNC_L>;
+                        layers = <MAC_L SCND_L FUNC_L>;
                 };
                 
                 combo_delete_word_mac{
@@ -88,39 +87,32 @@
                         layers = <MAC_L>;
                 };
 
-                combo_delete_word_win{
-                        timeout-ms = <50>;
-                        key-positions = <19 20 21>;
-                        bindings = <&kp LC(BACKSPACE)>;
-                        layers = <WIN_L>;
-                };
-
                 combo_capsword{
                         timeout-ms = <50>;
                         key-positions = <7 8 9>;
                         bindings = <&caps_word>;
-                        layers = <MAC_L WIN_L SCND_L FUNC_L>;
+                        layers = <MAC_L SCND_L FUNC_L>;
                 };
 
                 combo_rgui {
                         timeout-ms = <50>;
                         key-positions = <7 19>;
                         bindings = <&kp RGUI>;
-                        layers = <MAC_L WIN_L SCND_L FUNC_L>;
+                        layers = <MAC_L SCND_L FUNC_L>;
                 };
 
                 combo_ralt {
                         timeout-ms = <50>;
                         key-positions = <8 20>;
                         bindings = <&kp RALT>;
-                        layers = <MAC_L WIN_L SCND_L FUNC_L>;
+                        layers = <MAC_L SCND_L FUNC_L>;
                 };
 
                 combo_rctrl {
                         timeout-ms = <50>;
                         key-positions = <9 21>;
                         bindings = <&kp RCTRL>;
-                        layers = <MAC_L WIN_L SCND_L FUNC_L>;
+                        layers = <MAC_L SCND_L FUNC_L>;
                 };
 
                 combo_left_desktop_mac {
@@ -135,27 +127,6 @@
                         key-positions = <32 33>;
                         bindings = <&kp LC(RIGHT_ARROW)>;
                         layers = <MAC_L>;
-                };
-
-                combo_left_desktop_win {
-                        timeout-ms = <50>;
-                        key-positions = <31 32>;
-                        bindings = <&kp LC(LG(LEFT_ARROW))>;
-                        layers = <WIN_L>;
-                };
-
-                combo_right_desktop_win {
-                        timeout-ms = <50>;
-                        key-positions = <32 33>;
-                        bindings = <&kp LC(LG(RIGHT_ARROW))>;
-                        layers = <WIN_L>;
-                };
-
-                combo_layout_change {
-                        timeout-ms = <50>;
-                        key-positions = <37 40>;
-                        bindings = <&tog WIN_L>;
-                        layers = <MAC_L WIN_L>;
                 };
 
                 combo_game_layer {
@@ -182,16 +153,6 @@
                         >;
                 };
 
-                win_layer {
-                        display-name = "Win";
-                        bindings = <
-                                &kp ESC   &kp Q &kp W &kp E &kp R &kp T     &kp Y &kp U &kp I     &kp O   &kp P    &kp BSPC
-                                &kp TAB   &kp A &kp S &kp D &kp F &kp G     &kp H &kp J &kp K     &kp L   &kp SEMI &kp SQT
-                                &kp LCTRL &kp Z &kp X &kp C &kp V &kp B     &kp N &kp M &kp COMMA &kp DOT &kp FSLH &kp ENTER
-                                            &kp LALT &kp TAB &kp LSHIFT     &lt SCND_L SPACE &lt AJST_L GRAVE &kp LGUI
-                        >;
-                };
-                
                 secondary_layer {
                         display-name = "Nav";
                         bindings = <
