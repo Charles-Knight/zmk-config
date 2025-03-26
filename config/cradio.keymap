@@ -278,8 +278,8 @@
                 mac_layer {
                         display-name = "Mac";
                         bindings = <
-                                        &kp Q &kp W       &kp E      &kp R      &kp T   &kp Y &kp U      &kp I      &kp O       &kp P
-                                        &kp A &hm LCTRL S &hm LALT D &hm LGUI F &kp G   &kp H &hm RGUI J &hm RALT K &hm RCTRL L &kp SEMI
+                                        &kp Q &kp W       &kp E      &kp R      &kp T         &kp Y       &kp U      &kp I      &kp O       &kp P
+                                        &kp A &hm LCTRL S &hm LALT D &hm LGUI F &hm GLOBE G   &hm GLOBE H &hm RGUI J &hm RALT K &hm RCTRL L &kp SEMI
                                         &kp Z &kp X       &kp C      &kp V      &kp B   &kp N &kp M      &kp COMMA  &kp DOT     &kp FSLH
                                                                 &lt ADJ TAB &kp LSHFT   &lt SCND SPACE &lt NUM BACKSPACE
                                 >;
@@ -288,19 +288,19 @@
                 win_layer {
                         display-name = "Win";
                         bindings = <
-                                        &kp Q &kp W       &kp E      &kp R      &kp T   &kp Y &kp U      &kp I      &kp O       &kp P
-                                        &kp A &hm LCTRL S &hm LALT D &hm LGUI F &kp G   &kp H &hm RGUI J &hm RALT K &hm RCTRL L &kp SEMI
-                                        &kp Z &kp X       &kp C      &kp V      &kp B   &kp N &kp M      &kp COMMA  &kp DOT     &kp FSLH
-                                                                &lt ADJ TAB &kp LSHFT   &lt SCND SPACE &lt NUM BACKSPACE
+                                        &kp Q &kp W       &kp E      &kp R      &kp T         &kp Y       &kp U      &kp I      &kp O       &kp P
+                                        &kp A &hm LCTRL S &hm LALT D &hm LGUI F &hm GLOBE G   &hm GLOBE H &hm RGUI J &hm RALT K &hm RCTRL L &kp SEMI
+                                        &kp Z &kp X       &kp C      &kp V      &kp B         &kp N       &kp M      &kp COMMA  &kp DOT     &kp FSLH
+                                                                &lt ADJ TAB &kp LSHFT         &lt SCND SPACE &lt NUM BACKSPACE
                                 >;
                 };
 
                 secondary_layer {
                         display-name = "2nd";
                         bindings = <
-                                &none  &kp HOME &kp UP   &kp END   &none        &none    &none     &none     &none     &kp BSLH
-                                &none  &kp LEFT &kp DOWN &kp RIGHT &kp LBKT     &kp RBKT &kp GRAVE &kp MINUS &kp EQUAL &kp SQT
-                                &kp N1 &kp N2   &kp N3   &kp N4    &kp N5       &kp N6   &kp N7    &kp N8    &kp N9    &kp N0
+                                &none  &kp HOME &kp UP   &kp END   &none        &kp RBKT  &kp GRAVE &kp MINUS &kp EQUAL &kp BSLH
+                                &none  &kp LEFT &kp DOWN &kp RIGHT &kp LBKT     &kp GLOBE &kp RGUI  &kp RALT  &kp RCTRL &kp SQT
+                                &kp N1 &kp N2   &kp N3   &kp N4    &kp N5       &kp N6    &kp N7    &kp N8    &kp N9    &kp N0
                                                             &trans &trans       &trans &trans
                         >;
                 };
