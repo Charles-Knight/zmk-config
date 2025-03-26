@@ -63,30 +63,6 @@
                         bindings = <&kp TAB>;
                 };
 
-                combo_lctrl {
-                        timeout-ms = <50>;
-                        key-positions = <1 11>;
-                        bindings = <&kp LCTRL>;
-                };
-
-                combo_lalt {
-                        timeout-ms = <50>;
-                        key-positions = <2 12>;
-                        bindings = <&kp LALT>;
-                };
-
-                combo_lgui {
-                        timeout-ms = <50>;
-                        key-positions = <3 13>;
-                        bindings = <&kp LGUI>;
-                };
-
-                combo_lglobe {
-                        timeout-ms = <50>;
-                        key-positions = <4 14>;
-                        bindings = <&kp GLOBE>;
-                };
-
                 combo_undo_mac {
                         timeout-ms = <50>;
                         key-positions = <10 20>;
@@ -168,30 +144,6 @@
                         key-positions = <6 7 8>;
                         bindings = <&kp LC(BACKSPACE)>;
                         layers = <WIN>;
-                };
-
-                combo_rglobe {
-                        timeout-ms = <50>;
-                        key-positions = <5 15>;
-                        bindings = <&kp GLOBE>;
-                };
-
-                combo_rgui {
-                        timeout-ms = <50>;
-                        key-positions = <6 16>;
-                        bindings = <&kp RGUI>;
-                };
-
-                combo_ralt {
-                        timeout-ms = <50>;
-                        key-positions = <7 17>;
-                        bindings = <&kp RALT>;
-                };
-
-                combo_rctrl {
-                        timeout-ms = <50>;
-                        key-positions = <8 18>;
-                        bindings = <&kp RCTRL>;
                 };
 
                 combo_left_desktop_mac {
