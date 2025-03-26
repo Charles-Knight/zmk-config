@@ -181,46 +181,46 @@
                 };
 
                 // Other Combos
+                combo_backslash {
+                        timeout-ms = <50>;
+                        key-positions = <3 13>;
+                        bindings = <&kp BSLH>;
+                };
+                
                 combo_left_bracket {
                         timeout-ms = <50>;
-                        key-positions = <14 24>;
+                        key-positions = <4 14>;
                         bindings = <&kp LBKT>;
                 };
 
                 combo_right_bracket {
                         timeout-ms = <50>;
-                        key-positions = <15 25>;
+                        key-positions = <5 15>;
                         bindings = <&kp RBKT>;
                 };
 
                 combo_grave {
                         timeout-ms = <50>;
-                        key-positions = <16 26>;
+                        key-positions = <6 16>;
                         bindings = <&kp GRAVE>;
                 };
 
                 combo_equal {
                         timeout-ms = <50>;
-                        key-positions = <17 27>;
+                        key-positions = <7 17>;
                         bindings = <&kp MINUS>;
                 };
 
                 combo_minus {
                         timeout-ms = <50>;
-                        key-positions = <18 28>;
+                        key-positions = <8 18>;
                         bindings = <&kp EQUAL>;
                 };
 
                 combo_single_quote {
                         timeout-ms = <50>;
-                        key-positions = <19 29>;
-                        bindings = <&kp SQT>;
-                };
-
-                combo_backslash {
-                        timeout-ms = <50>;
                         key-positions = <9 19>;
-                        bindings = <&kp BSLH>;
+                        bindings = <&kp SQT>;
                 };
         };
         
