@@ -19,6 +19,17 @@
 
 / {
         behaviors {
+                hm: homerow_mods {
+                        compatible = "zmk,behavior-hold-tap";
+                        label = "HOMEROW_MODS";
+                        #binding-cells = <2>;
+                        tapping-term-ms = <150>;
+                        quick-tap-ms = <150>;
+                        require-prior-idle-ms = <125>;
+                        flavor = "tap-preferred";
+                        bindings = <&kp>, <&kp>;
+                };
+                
                 bspc_del: backspace_delete {
                         compatible = "zmk,behavior-mod-morph";
                         label = "BACKSPACE_DELETE";
