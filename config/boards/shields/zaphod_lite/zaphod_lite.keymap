@@ -19,6 +19,17 @@
 
 / {
         behaviors {
+                hm: homerow_mods {
+                        compatible = "zmk,behavior-hold-tap";
+                        label = "HOMEROW_MODS";
+                        #binding-cells = <2>;
+                        tapping-term-ms = <150>;
+                        quick-tap-ms = <150>;
+                        require-prior-idle-ms = <125>;
+                        flavor = "tap-preferred";
+                        bindings = <&kp>, <&kp>;
+                };
+                
                 bspc_del: backspace_delete {
                         compatible = "zmk,behavior-mod-morph";
                         label = "BACKSPACE_DELETE";
@@ -50,30 +61,6 @@
                         timeout-ms = <50>;
                         key-positions = <12 13>;
                         bindings = <&kp TAB>;
-                };
-
-                combo_lctrl {
-                        timeout-ms = <50>;
-                        key-positions = <1 11>;
-                        bindings = <&kp LCTRL>;
-                };
-
-                combo_lalt {
-                        timeout-ms = <50>;
-                        key-positions = <2 12>;
-                        bindings = <&kp LALT>;
-                };
-
-                combo_lgui {
-                        timeout-ms = <50>;
-                        key-positions = <3 13>;
-                        bindings = <&kp LGUI>;
-                };
-
-                combo_lglobe {
-                        timeout-ms = <50>;
-                        key-positions = <4 14>;
-                        bindings = <&kp GLOBE>;
                 };
 
                 combo_undo_mac {
@@ -159,30 +146,6 @@
                         layers = <WIN>;
                 };
 
-                combo_rglobe {
-                        timeout-ms = <50>;
-                        key-positions = <5 15>;
-                        bindings = <&kp GLOBE>;
-                };
-
-                combo_rgui {
-                        timeout-ms = <50>;
-                        key-positions = <6 16>;
-                        bindings = <&kp RGUI>;
-                };
-
-                combo_ralt {
-                        timeout-ms = <50>;
-                        key-positions = <7 17>;
-                        bindings = <&kp RALT>;
-                };
-
-                combo_rctrl {
-                        timeout-ms = <50>;
-                        key-positions = <8 18>;
-                        bindings = <&kp RCTRL>;
-                };
-
                 combo_left_desktop_mac {
                         timeout-ms = <50>;
                         key-positions = <26 27>;
@@ -218,46 +181,46 @@
                 };
 
                 // Other Combos
+                combo_backslash {
+                        timeout-ms = <50>;
+                        key-positions = <3 13>;
+                        bindings = <&kp BSLH>;
+                };
+                
                 combo_left_bracket {
                         timeout-ms = <50>;
-                        key-positions = <14 24>;
+                        key-positions = <4 14>;
                         bindings = <&kp LBKT>;
                 };
 
                 combo_right_bracket {
                         timeout-ms = <50>;
-                        key-positions = <15 25>;
+                        key-positions = <5 15>;
                         bindings = <&kp RBKT>;
                 };
 
                 combo_grave {
                         timeout-ms = <50>;
-                        key-positions = <16 26>;
+                        key-positions = <6 16>;
                         bindings = <&kp GRAVE>;
                 };
 
                 combo_equal {
                         timeout-ms = <50>;
-                        key-positions = <17 27>;
+                        key-positions = <7 17>;
                         bindings = <&kp MINUS>;
                 };
 
                 combo_minus {
                         timeout-ms = <50>;
-                        key-positions = <18 28>;
+                        key-positions = <8 18>;
                         bindings = <&kp EQUAL>;
                 };
 
                 combo_single_quote {
                         timeout-ms = <50>;
-                        key-positions = <19 29>;
-                        bindings = <&kp SQT>;
-                };
-
-                combo_backslash {
-                        timeout-ms = <50>;
                         key-positions = <9 19>;
-                        bindings = <&kp BSLH>;
+                        bindings = <&kp SQT>;
                 };
         };
         
@@ -267,30 +230,30 @@
                 mac_layer {
                         display-name = "Mac";
                         bindings = <
-                                        &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U &kp I     &kp O   &kp P
-                                        &kp A &kp S &kp D &kp F &kp G   &kp H &kp J &kp K     &kp L   &kp SEMI
-                                        &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M &kp COMMA &kp DOT &kp FSLH
-                                                &lt ADJ TAB &kp LSHFT   &lt SCND SPACE &lt NUM BACKSPACE
+                                        &kp Q &kp W       &kp E      &kp R      &kp T         &kp Y       &kp U      &kp I      &kp O       &kp P
+                                        &kp A &hm LCTRL S &hm LALT D &hm LGUI F &hm GLOBE G   &hm GLOBE H &hm RGUI J &hm RALT K &hm RCTRL L &kp SEMI
+                                        &kp Z &kp X       &kp C      &kp V      &kp B   &kp N &kp M      &kp COMMA  &kp DOT     &kp FSLH
+                                                                &lt ADJ TAB &kp LSHFT   &lt SCND SPACE &lt NUM BACKSPACE
                                 >;
                 };
 
                 win_layer {
                         display-name = "Win";
                         bindings = <
-                                        &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U &kp I     &kp O   &kp P
-                                        &kp A &kp S &kp D &kp F &kp G   &kp H &kp J &kp K     &kp L   &kp SEMI
-                                        &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M &kp COMMA &kp DOT &kp FSLH
-                                                &lt ADJ TAB &kp LSHFT   &lt SCND SPACE &lt NUM BACKSPACE
+                                        &kp Q &kp W       &kp E      &kp R      &kp T         &kp Y       &kp U      &kp I      &kp O       &kp P
+                                        &kp A &hm LCTRL S &hm LALT D &hm LGUI F &hm GLOBE G   &hm GLOBE H &hm RGUI J &hm RALT K &hm RCTRL L &kp SEMI
+                                        &kp Z &kp X       &kp C      &kp V      &kp B         &kp N       &kp M      &kp COMMA  &kp DOT     &kp FSLH
+                                                                &lt ADJ TAB &kp LSHFT         &lt SCND SPACE &lt NUM BACKSPACE
                                 >;
                 };
 
                 secondary_layer {
                         display-name = "2nd";
                         bindings = <
-                                &none  &kp HOME &kp UP   &kp END   &none      &none  &none  &none  &none  &none
-                                &none  &kp LEFT &kp DOWN &kp RIGHT &none      &none  &none  &none  &none  &none
-                                &kp N1 &kp N2   &kp N3   &kp N4    &kp N5     &kp N6 &kp N7 &kp N8 &kp N9 &kp N0
-                                                            &trans &trans     &trans &trans
+                                &none  &kp HOME &kp UP   &kp END   &none        &kp RBKT  &kp GRAVE &kp MINUS &kp EQUAL &kp BSLH
+                                &none  &kp LEFT &kp DOWN &kp RIGHT &kp LBKT     &kp GLOBE &kp RGUI  &kp RALT  &kp RCTRL &kp SQT
+                                &kp N1 &kp N2   &kp N3   &kp N4    &kp N5       &kp N6    &kp N7    &kp N8    &kp N9    &kp N0
+                                                            &trans &trans       &trans &trans
                         >;
                 };
 
