@@ -63,62 +63,6 @@
                         bindings = <&kp TAB>;
                 };
 
-                combo_undo_mac {
-                        timeout-ms = <50>;
-                        key-positions = <10 20>;
-                        bindings = <&kp LG(Z)>;
-                        layers = <MAC>;
-                };
-
-                combo_undo_win {
-                        timeout-ms = <50>;
-                        key-positions = <10 20>;
-                        bindings = <&kp LC(Z)>;
-                        layers = <WIN>;
-                };
-
-                combo_cut_mac {
-                        timeout-ms = <50>;
-                        key-positions = <11 21>;
-                        bindings = <&kp LG(X)>;
-                        layers = <MAC>;
-                };
-
-                combo_cut_win {
-                        timeout-ms = <50>;
-                        key-positions = <11 21>;
-                        bindings = <&kp LC(X)>;
-                        layers = <WIN>;
-                };
-
-                combo_copy_mac {
-                        timeout-ms = <50>;
-                        key-positions = <12 22>;
-                        bindings = <&kp LG(C)>;
-                        layers = <MAC>;
-                };
-
-                combo_copy_win {
-                        timeout-ms = <50>;
-                        key-positions = <12 22>;
-                        bindings = <&kp LC(C)>;
-                        layers = <WIN>;
-                };
-
-                combo_paste_mac {
-                        timeout-ms = <50>;
-                        key-positions = <13 23>;
-                        bindings = <&kp LG(V)>;
-                        layers = <MAC>;
-                };
-
-                combo_paste_win {
-                        timeout-ms = <50>;
-                        key-positions = <13 23>;
-                        bindings = <&kp LC(V)>;
-                        layers = <WIN>;
-                };
-
                 // Right Hand Combos
                 combo_backspace {
                         timeout-ms = <50>;
@@ -174,13 +118,68 @@
                         layers = <WIN>;
                 };
 
-                combo_layout_change {
+                // Number Combos
+                combo_one {
                         timeout-ms = <50>;
-                        key-positions = <30 33>;
-                        bindings = <&tog WIN>;
+                        key-positions = <10 20>;
+                        bindings = <&kp N1>;
                 };
 
-                // Other Combos
+                combo_two {
+                        timeout-ms = <50>;
+                        key-positions = <11 21>;
+                        bindings = <&kp N2>;
+                };
+
+                combo_three {
+                        timeout-ms = <50>;
+                        key-positions = <12 22>;
+                        bindings = <&kp N3>;
+                };
+
+                combo_four {
+                        timeout-ms = <50>;
+                        key-positions = <13 23>;
+                        bindings = <&kp N4>;
+                };
+
+                combo_five {
+                        timeout-ms = <50>;
+                        key-positions = <14 24>;
+                        bindings = <&kp N5>;
+                };
+
+                combo_six {
+                        timeout-ms = <50>;
+                        key-positions = <15 25>;
+                        bindings = <&kp N6>;
+                };
+
+                combo_seven {
+                        timeout-ms = <50>;
+                        key-positions = <16 26>;
+                        bindings = <&kp N7>;
+                };
+
+                combo_eight {
+                        timeout-ms = <50>;
+                        key-positions = <17 27>;
+                        bindings = <&kp N8>;
+                };
+
+                combo_nine {
+                        timeout-ms = <50>;
+                        key-positions = <18 28>;
+                        bindings = <&kp N9>;
+                };
+
+                combo_zero {
+                        timeout-ms = <50>;
+                        key-positions = <19 29>;
+                        bindings = <&kp N0>;
+                };
+
+                // Symbol Combos
                 combo_backslash {
                         timeout-ms = <50>;
                         key-positions = <3 13>;
@@ -221,6 +220,13 @@
                         timeout-ms = <50>;
                         key-positions = <9 19>;
                         bindings = <&kp SQT>;
+                };
+
+                // Other Combos
+                combo_layout_change {
+                        timeout-ms = <50>;
+                        key-positions = <30 33>;
+                        bindings = <&tog WIN>;
                 };
         };
         
