@@ -50,7 +50,6 @@
         combos {
                 compatible = "zmk,combos";
                 
-                // Left Hand Combos
                 combo_escape {
                         timeout-ms = <50>;
                         key-positions = <11 12>;
@@ -63,63 +62,6 @@
                         bindings = <&kp TAB>;
                 };
 
-                combo_undo_mac {
-                        timeout-ms = <50>;
-                        key-positions = <10 20>;
-                        bindings = <&kp LG(Z)>;
-                        layers = <MAC>;
-                };
-
-                combo_undo_win {
-                        timeout-ms = <50>;
-                        key-positions = <10 20>;
-                        bindings = <&kp LC(Z)>;
-                        layers = <WIN>;
-                };
-
-                combo_cut_mac {
-                        timeout-ms = <50>;
-                        key-positions = <11 21>;
-                        bindings = <&kp LG(X)>;
-                        layers = <MAC>;
-                };
-
-                combo_cut_win {
-                        timeout-ms = <50>;
-                        key-positions = <11 21>;
-                        bindings = <&kp LC(X)>;
-                        layers = <WIN>;
-                };
-
-                combo_copy_mac {
-                        timeout-ms = <50>;
-                        key-positions = <12 22>;
-                        bindings = <&kp LG(C)>;
-                        layers = <MAC>;
-                };
-
-                combo_copy_win {
-                        timeout-ms = <50>;
-                        key-positions = <12 22>;
-                        bindings = <&kp LC(C)>;
-                        layers = <WIN>;
-                };
-
-                combo_paste_mac {
-                        timeout-ms = <50>;
-                        key-positions = <13 23>;
-                        bindings = <&kp LG(V)>;
-                        layers = <MAC>;
-                };
-
-                combo_paste_win {
-                        timeout-ms = <50>;
-                        key-positions = <13 23>;
-                        bindings = <&kp LC(V)>;
-                        layers = <WIN>;
-                };
-
-                // Right Hand Combos
                 combo_backspace {
                         timeout-ms = <50>;
                         key-positions = <16 17>;
@@ -131,56 +73,69 @@
                         key-positions = <17 18>;
                         bindings = <&kp ENTER>;
                 };
-                
-                combo_delete_word_mac{
+
+                // Number Combos
+                combo_one {
                         timeout-ms = <50>;
-                        key-positions = <6 7 8>;
-                        bindings = <&kp LA(BACKSPACE)>;
-                        layers = <MAC>;
+                        key-positions = <10 20>;
+                        bindings = <&kp N1>;
                 };
 
-                combo_delete_word_win{
+                combo_two {
                         timeout-ms = <50>;
-                        key-positions = <6 7 8>;
-                        bindings = <&kp LC(BACKSPACE)>;
-                        layers = <WIN>;
+                        key-positions = <11 21>;
+                        bindings = <&kp N2>;
                 };
 
-                combo_left_desktop_mac {
+                combo_three {
                         timeout-ms = <50>;
-                        key-positions = <26 27>;
-                        bindings = <&kp LC(LEFT_ARROW)>;
-                        layers = <MAC>;
+                        key-positions = <12 22>;
+                        bindings = <&kp N3>;
                 };
 
-                combo_right_desktop_mac {
+                combo_four {
                         timeout-ms = <50>;
-                        key-positions = <27 28>;
-                        bindings = <&kp LC(RIGHT_ARROW)>;
-                        layers = <MAC>;
+                        key-positions = <13 23>;
+                        bindings = <&kp N4>;
                 };
 
-                combo_left_desktop_win {
+                combo_five {
                         timeout-ms = <50>;
-                        key-positions = <26 27>;
-                        bindings = <&kp LC(LG(LEFT_ARROW))>;
-                        layers = <WIN>;
+                        key-positions = <14 24>;
+                        bindings = <&kp N5>;
                 };
 
-                combo_right_desktop_win {
+                combo_six {
                         timeout-ms = <50>;
-                        key-positions = <27 28>;
-                        bindings = <&kp LC(LG(RIGHT_ARROW))>;
-                        layers = <WIN>;
+                        key-positions = <15 25>;
+                        bindings = <&kp N6>;
                 };
 
-                combo_layout_change {
+                combo_seven {
                         timeout-ms = <50>;
-                        key-positions = <30 33>;
-                        bindings = <&tog WIN>;
+                        key-positions = <16 26>;
+                        bindings = <&kp N7>;
                 };
 
-                // Other Combos
+                combo_eight {
+                        timeout-ms = <50>;
+                        key-positions = <17 27>;
+                        bindings = <&kp N8>;
+                };
+
+                combo_nine {
+                        timeout-ms = <50>;
+                        key-positions = <18 28>;
+                        bindings = <&kp N9>;
+                };
+
+                combo_zero {
+                        timeout-ms = <50>;
+                        key-positions = <19 29>;
+                        bindings = <&kp N0>;
+                };
+
+                // Symbol Combos
                 combo_backslash {
                         timeout-ms = <50>;
                         key-positions = <3 13>;
@@ -222,6 +177,112 @@
                         key-positions = <9 19>;
                         bindings = <&kp SQT>;
                 };
+
+                // Shortcut and Macro combos
+                combo_undo_mac{
+                        timeout-ms = <50>;
+                        key-positions = <20 21>;
+                        bindings = <&kp LG(Z)>;
+                        layers = <MAC>;
+                };
+
+                combo_undo_win{
+                        timeout-ms = <50>;
+                        key-positions = <20 21>;
+                        bindings = <&kp LC(Z)>;
+                        layers = <WIN>;
+                };
+
+                combo_cut_mac{
+                        timeout-ms = <50>;
+                        key-positions = <21 22>;
+                        bindings = <&kp LG(X)>;
+                        layers = <MAC>;
+                };
+
+                combo_cut_win{
+                        timeout-ms = <50>;
+                        key-positions = <21 22>;
+                        bindings = <&kp LC(X)>;
+                        layers = <WIN>;
+                };
+
+                combo_copy_mac{
+                        timeout-ms = <50>;
+                        key-positions = <22 23>;
+                        bindings = <&kp LG(C)>;
+                        layers = <MAC>;
+                };
+                
+                combo_copy_win{
+                        timeout-ms = <50>;
+                        key-positions = <22 23>;
+                        bindings = <&kp LC(C)>;
+                        layers = <WIN>;
+                };
+
+                combo_paste_mac{
+                        timeout-ms = <50>;
+                        key-positions = <23 24>;
+                        bindings = <&kp LG(V)>;
+                        layers = <MAC>;
+                };
+
+                combo_paste_win{
+                        timeout-ms = <50>;
+                        key-positions = <23 24>;
+                        bindings = <&kp LC(V)>;
+                        layers = <WIN>;
+                };
+
+                combo_delete_word_mac{
+                        timeout-ms = <50>;
+                        key-positions = <6 7 8>;
+                        bindings = <&kp LA(BACKSPACE)>;
+                        layers = <MAC>;
+                };
+
+                combo_delete_word_win{
+                        timeout-ms = <50>;
+                        key-positions = <6 7 8>;
+                        bindings = <&kp LC(BACKSPACE)>;
+                        layers = <WIN>;
+                };
+
+                combo_left_desktop_mac {
+                        timeout-ms = <50>;
+                        key-positions = <26 27>;
+                        bindings = <&kp LC(LEFT_ARROW)>;
+                        layers = <MAC>;
+                };
+
+                combo_right_desktop_mac {
+                        timeout-ms = <50>;
+                        key-positions = <27 28>;
+                        bindings = <&kp LC(RIGHT_ARROW)>;
+                        layers = <MAC>;
+                };
+
+                combo_left_desktop_win {
+                        timeout-ms = <50>;
+                        key-positions = <26 27>;
+                        bindings = <&kp LC(LG(LEFT_ARROW))>;
+                        layers = <WIN>;
+                };
+
+                combo_right_desktop_win {
+                        timeout-ms = <50>;
+                        key-positions = <27 28>;
+                        bindings = <&kp LC(LG(RIGHT_ARROW))>;
+                        layers = <WIN>;
+                };
+                
+                // Other Combos
+                combo_layout_change {
+                        timeout-ms = <50>;
+                        key-positions = <30 33>;
+                        bindings = <&tog WIN>;
+                };
         };
         
         keymap {
@@ -250,7 +311,7 @@
                 secondary_layer {
                         display-name = "2nd";
                         bindings = <
-                                &none  &kp HOME &kp UP   &kp END   &none        &kp RBKT  &kp GRAVE &kp MINUS &kp EQUAL &kp BSLH
+                                &none  &kp HOME &kp UP   &kp END   &kp LBKT     &kp RBKT  &kp GRAVE &kp MINUS &kp EQUAL &kp BSLH
                                 &none  &kp LEFT &kp DOWN &kp RIGHT &kp LBKT     &kp GLOBE &kp RGUI  &kp RALT  &kp RCTRL &kp SQT
                                 &kp N1 &kp N2   &kp N3   &kp N4    &kp N5       &kp N6    &kp N7    &kp N8    &kp N9    &kp N0
                                                             &trans &trans       &trans &trans
