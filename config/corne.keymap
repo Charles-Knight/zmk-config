@@ -17,6 +17,17 @@
 
 / {
         behaviors {
+                hm: homerow_mods {
+                        compatible = "zmk,behavior-hold-tap";
+                        label = "HOMEROW_MODS";
+                        #binding-cells = <2>;
+                        tapping-term-ms = <150>;
+                        quick-tap-ms = <150>;
+                        require-prior-idle-ms = <125>;
+                        flavor = "tap-preferred";
+                        bindings = <&kp>, <&kp>;
+                };
+
                 bspc_del: backspace_delete {
                         compatible = "zmk,behavior-mod-morph";
                         #binding-cells = <0>;
@@ -41,27 +52,6 @@
                         timeout-ms = <50>;
                         key-positions = <15 16>;
                         bindings = <&kp TAB>;
-                        layers = <MAC_L SCND_L FUNC_L>;
-                };
-
-                combo_lctrl {
-                        timeout-ms = <50>;
-                        key-positions = <2 14>;
-                        bindings = <&kp LCTRL>;
-                        layers = <MAC_L SCND_L FUNC_L>;
-                };
-
-                combo_lalt {
-                        timeout-ms = <50>;
-                        key-positions = <3 15>;
-                        bindings = <&kp LALT>;
-                        layers = <MAC_L SCND_L FUNC_L>;
-                };
-
-                combo_lgui {
-                        timeout-ms = <50>;
-                        key-positions = <4 16>;
-                        bindings = <&kp LGUI>;
                         layers = <MAC_L SCND_L FUNC_L>;
                 };
 
@@ -94,27 +84,6 @@
                         layers = <MAC_L SCND_L FUNC_L>;
                 };
 
-                combo_rgui {
-                        timeout-ms = <50>;
-                        key-positions = <7 19>;
-                        bindings = <&kp RGUI>;
-                        layers = <MAC_L SCND_L FUNC_L>;
-                };
-
-                combo_ralt {
-                        timeout-ms = <50>;
-                        key-positions = <8 20>;
-                        bindings = <&kp RALT>;
-                        layers = <MAC_L SCND_L FUNC_L>;
-                };
-
-                combo_rctrl {
-                        timeout-ms = <50>;
-                        key-positions = <9 21>;
-                        bindings = <&kp RCTRL>;
-                        layers = <MAC_L SCND_L FUNC_L>;
-                };
-
                 combo_left_desktop_mac {
                         timeout-ms = <50>;
                         key-positions = <31 32>;
@@ -142,19 +111,19 @@
                 mac_layer {
                         display-name = "Mac";
                         bindings = <
-                                &kp EQUAL &kp Q &kp W &kp E &kp R &kp T     &kp Y &kp U &kp I     &kp O   &kp P    &kp BSLH
-                                &kp MINUS &kp A &kp S &kp D &kp F &kp G     &kp H &kp J &kp K     &kp L   &kp SEMI &kp SQT
-                                &kp LBKT  &kp Z &kp X &kp C &kp V &kp B     &kp N &kp M &kp COMMA &kp DOT &kp FSLH &kp RBKT
-                                            &kp ESC &kp TAB &kp LSHIFT     &lt SCND_L SPACE &lt AJST_L BACKSPACE &kp GRAVE
+                                &kp GRAVE &kp Q &kp W       &kp E      &kp R      &kp T           &kp Y       &kp U      &kp I      &kp O       &kp P    &kp BSLH
+                                &kp MINUS &kp A &hm LCTRL S &hm LALT D &hm LGUI F &hm GLOBE G     &hm GLOBE H &hm RGUI J &hm RALT K &hm RCTRL L &kp SEMI &kp SQT
+                                &kp EQUAL &kp Z &kp X       &kp C      &kp V      &kp B           &kp N       &kp M      &kp COMMA  &kp DOT     &kp FSLH &kp LGUI
+                                                          &kp LBKT &lt AJST_L LPAR &kp LSHIFT     &lt SCND_L SPACE &kp RPAR &kp RBKT
                         >;
                 };
 
                 secondary_layer {
                         display-name = "Nav";
                         bindings = <
-                                &none &none  &kp HOME &kp UP   &kp END   &none        &none    &none     &none     &none     &kp BSLH &none
-                                &none &none  &kp LEFT &kp DOWN &kp RIGHT &kp LBKT     &kp RBKT &kp GRAVE &kp MINUS &kp EQUAL &kp SQT  &none
-                                &none &kp N1 &kp N2   &kp N3   &kp N4    &kp N5       &kp N6   &kp N7    &kp N8    &kp N9    &kp N0   &none
+                                &none &none  &kp HOME &kp UP   &kp END   &none        &none  &none    &none    &none     &none  &none
+                                &none &none  &kp LEFT &kp DOWN &kp RIGHT &none        &none  &kp RGUI &kp RALT &kp RCTRL &none  &none
+                                &none &kp N1 &kp N2   &kp N3   &kp N4    &kp N5       &kp N6 &kp N7   &kp N8   &kp N9    &kp N0 &none
                                                              &trans &trans &trans     &trans &trans &trans
                         >;
                 };
