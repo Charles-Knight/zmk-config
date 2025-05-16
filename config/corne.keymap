@@ -40,7 +40,6 @@
         combos {
                 compatible = "zmk,combos";
 
-                // Left Hand Combos
                 combo_escape {
                         timeout-ms = <50>;
                         key-positions = <14 15>;
@@ -55,7 +54,6 @@
                         layers = <MAC_L SCND_L FUNC_L>;
                 };
 
-                // Right Hand Combos
                 combo_backspace {
                         timeout-ms = <50>;
                         key-positions = <19 20>;
