@@ -45,28 +45,28 @@
                         timeout-ms = <50>;
                         key-positions = <14 15>;
                         bindings = <&kp ESC>;
-                        layers = <MAC_L SCND_L FUNC_L>;
+                        layers = <MAC_L WIN_L SCND_L FUNC_L>;
                 };
 
                 combo_tab {
                         timeout-ms = <50>;
                         key-positions = <15 16>;
                         bindings = <&kp TAB>;
-                        layers = <MAC_L SCND_L FUNC_L>;
+                        layers = <MAC_L WIN_L SCND_L FUNC_L>;
                 };
 
                 combo_backspace {
                         timeout-ms = <50>;
                         key-positions = <19 20>;
                         bindings = <&bspc_del>;
-                        layers = <MAC_L SCND_L FUNC_L>;
+                        layers = <MAC_L WIN_L SCND_L FUNC_L>;
                 };
 
                 combo_enter {
                         timeout-ms = <50>;
                         key-positions = <20 21>;
                         bindings = <&kp ENTER>;
-                        layers = <MAC_L SCND_L FUNC_L>;
+                        layers = <MAC_L WIN_L SCND_L FUNC_L>;
                 };
                 
                 combo_delete_word_mac{
