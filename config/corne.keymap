@@ -71,16 +71,16 @@
                 
                 combo_delete_word_mac{
                         timeout-ms = <50>;
-                        key-positions = <19 20 21>;
+                        key-positions = <7 8 9>;
                         bindings = <&kp LA(BACKSPACE)>;
                         layers = <MAC_L>;
                 };
 
-                combo_capsword{
+                combo_delete_word_win{
                         timeout-ms = <50>;
                         key-positions = <7 8 9>;
-                        bindings = <&caps_word>;
-                        layers = <MAC_L SCND_L FUNC_L>;
+                        bindings = <&kp LC(BACKSPACE)>;
+                        layers = <WIN_L>;
                 };
 
                 combo_left_desktop_mac {
@@ -95,6 +95,20 @@
                         key-positions = <32 33>;
                         bindings = <&kp LC(RIGHT_ARROW)>;
                         layers = <MAC_L>;
+                };
+
+                combo_left_desktop_win {
+                        timeout-ms = <50>;
+                        key-positions = <31 32>;
+                        bindings = <&kp LC(LG(LEFT_ARROW))>;
+                        layers = <WIN_L>;
+                };
+
+                combo_right_desktop_mac {
+                        timeout-ms = <50>;
+                        key-positions = <32 33>;
+                        bindings = <&kp LC(LG(RIGHT_ARROW))>;
+                        layers = <WIN_L>;
                 };
 
                 combo_change_mode {
