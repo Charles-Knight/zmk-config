@@ -10,10 +10,11 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 
 #define MAC_L 0
-#define SCND_L 1
-#define FUNC_L 2
-#define AJST_L 3
-#define GAME_L 4
+#define WIN_L 1
+#define SCND_L 2
+#define FUNC_L 3
+#define AJST_L 4
+#define GAME_L 5
 
 / {
         behaviors {
@@ -96,6 +97,12 @@
                         layers = <MAC_L>;
                 };
 
+                combo_change_mode {
+                        timeout-ms = <50>;
+                        key-positions = <36 41>;
+                        bindings = <&tog WIN_L>;
+                };
+                
                 combo_game_layer {
                         timeout-ms = <50>;
                         key-positions = <11 35>;
@@ -116,12 +123,22 @@
                         >;
                 };
 
+                win_layer {
+                        display-name = "Win";
+                        bindings = <
+                                &kp GRAVE &kp Q &kp W       &kp E      &kp R      &kp T           &kp Y       &kp U      &kp I      &kp O       &kp P    &kp BSLH
+                                &kp MINUS &kp A &hm LCTRL S &hm LALT D &hm LGUI F &hm GLOBE G     &hm GLOBE H &hm RGUI J &hm RALT K &hm RCTRL L &kp SEMI &kp SQT
+                                &kp EQUAL &kp Z &kp X       &kp C      &kp V      &kp B           &kp N       &kp M      &kp COMMA  &kp DOT     &kp FSLH &kp LGUI
+                                                          &kp LBKT &lt AJST_L LPAR &kp LSHIFT     &lt SCND_L SPACE &kp RPAR &kp RBKT
+                        >;
+                };
+
                 secondary_layer {
                         display-name = "Nav";
                         bindings = <
-                                &none &none  &kp HOME &kp UP   &kp END   &none        &none  &none    &none    &none     &none  &none
-                                &none &none  &kp LEFT &kp DOWN &kp RIGHT &none        &none  &kp RGUI &kp RALT &kp RCTRL &none  &none
-                                &none &kp N1 &kp N2   &kp N3   &kp N4    &kp N5       &kp N6 &kp N7   &kp N8   &kp N9    &kp N0 &none
+                                &none &none  &kp HOME &kp UP   &kp END   &none        &none    &kp GRAVE &kp MINUS &kp EQUAL &none  &none
+                                &none &none  &kp LEFT &kp DOWN &kp RIGHT &kp LBKT     &kp RBKT &kp RGUI  &kp RALT  &kp RCTRL &none  &none
+                                &none &kp N1 &kp N2   &kp N3   &kp N4    &kp N5       &kp N6   &kp N7    &kp N8    &kp N9    &kp N0 &none
                                                              &trans &trans &trans     &trans &trans &trans
                         >;
                 };
