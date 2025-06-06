@@ -104,7 +104,7 @@
                         layers = <WIN_L>;
                 };
 
-                combo_right_desktop_mac {
+                combo_right_desktop_win {
                         timeout-ms = <50>;
                         key-positions = <32 33>;
                         bindings = <&kp LC(LG(RIGHT_ARROW))>;
