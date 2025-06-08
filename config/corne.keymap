@@ -113,14 +113,14 @@
 
                 combo_paste_mac {
                         timeout-ms = <50>;
-                        key-positions = <29 30>;
+                        key-positions = <28 29>;
                         bindings = <&kp LG(V)>;
                         layers = <MAC_L>;
                 };
 
                 combo_paste_win {
                         timeout-ms = <50>;
-                        key-positions = <29 30>;
+                        key-positions = <28 29>;
                         bindings = <&kp LC(V)>;
                         layers = <WIN_L>;
                 };
