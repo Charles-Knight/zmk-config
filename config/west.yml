@@ -3,7 +3,7 @@ manifest:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
     - name: jlw # Module for le jlwffre
-      url_base: https://github.com/josh-l-wang
+      url-base: https://github.com/josh-l-wang
   projects:
     - name: zmk
       remote: zmkfirmware
