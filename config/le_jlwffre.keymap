@@ -237,14 +237,14 @@
 
                 combo_delete_word_mac{
                         timeout-ms = <50>;
-                        key-positions = <6 7 8>;
+                        key-positions = <15 16>;
                         bindings = <&kp LA(BACKSPACE)>;
                         layers = <MAC>;
                 };
 
                 combo_delete_word_win{
                         timeout-ms = <50>;
-                        key-positions = <6 7 8>;
+                        key-positions = <15 16>;
                         bindings = <&kp LC(BACKSPACE)>;
                         layers = <WIN>;
                 };
