@@ -163,13 +163,13 @@
 
                 combo_left_bracket {
                         timeout-ms = <50>;
-                        key-positions = <4 14>;
+                        key-positions = <1 2>;
                         bindings = <&kp LBKT>;
                 };
 
                 combo_right_bracket {
                         timeout-ms = <50>;
-                        key-positions = <5 15>;
+                        key-positions = <2 3>;
                         bindings = <&kp RBKT>;
                 };
 
