@@ -52,7 +52,7 @@
 
                 combo_escape {
                         timeout-ms = <50>;
-                        key-positions = <11 12>;
+                        key-positions = <30 31>;
                         bindings = <&kp ESC>;
                 };
 
@@ -70,7 +70,7 @@
 
                 combo_enter {
                         timeout-ms = <50>;
-                        key-positions = <17 18>;
+                        key-positions = <32 33>;
                         bindings = <&kp ENTER>;
                 };
 
@@ -295,7 +295,7 @@
                                         &kp Q &kp W       &kp E      &kp R      &kp T         &kp Y       &kp U      &kp I      &kp O       &kp P
                                         &kp A &hm LCTRL S &hm LALT D &hm LGUI F &hm GLOBE G   &hm GLOBE H &hm RGUI J &hm RALT K &hm RCTRL L &kp SEMI
                                         &kp Z &kp X       &kp C      &kp V      &kp B   &kp N &kp M      &kp COMMA  &kp DOT     &kp FSLH
-                                                                &lt ADJ LPAR &kp LSHFT   &lt SCND SPACE &lt NUM RPAR
+                                                                &lt ADJ TAB &kp LSHFT   &lt SCND SPACE &lt NUM BACKSPACE_DELETE
                                 >;
                 };
 
@@ -305,7 +305,7 @@
                                         &kp Q &kp W       &kp E      &kp R      &kp T         &kp Y       &kp U      &kp I      &kp O       &kp P
                                         &kp A &hm LCTRL S &hm LALT D &hm LGUI F &hm GLOBE G   &hm GLOBE H &hm RGUI J &hm RALT K &hm RCTRL L &kp SEMI
                                         &kp Z &kp X       &kp C      &kp V      &kp B         &kp N       &kp M      &kp COMMA  &kp DOT     &kp FSLH
-                                                                &lt ADJ LPAR &kp LSHFT         &lt SCND SPACE &lt NUM RPAR
+                                                                &lt ADJ TAB &kp LSHFT         &lt SCND SPACE &lt NUM BACKSPACE_DELETE
                                 >;
                 };
 
