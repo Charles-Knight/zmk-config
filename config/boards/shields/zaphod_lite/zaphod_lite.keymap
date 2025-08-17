@@ -52,7 +52,7 @@
 
                 combo_escape {
                         timeout-ms = <50>;
-                        key-positions = <30 31>;
+                        key-positions = <11 12>;
                         bindings = <&kp ESC>;
                 };
 
@@ -70,7 +70,7 @@
 
                 combo_enter {
                         timeout-ms = <50>;
-                        key-positions = <32 33>;
+                        key-positions = <17 18>;
                         bindings = <&kp ENTER>;
                 };
 
