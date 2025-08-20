@@ -139,44 +139,44 @@
 
                 combo_grave {
                         timeout-ms = <30>;
-                        key-positions = <0 1>;
+                        key-positions = <3 13>;
                         bindings = <&kp GRAVE>;
-                };
-
-                combo_equal {
-                        timeout-ms = <30>;
-                        key-positions = <6 7>;
-                        bindings = <&kp MINUS>;
-                };
-
-                combo_minus {
-                        timeout-ms = <30>;
-                        key-positions = <7 8>;
-                        bindings = <&kp EQUAL>;
-                };
-
-                combo_backslash {
-                        timeout-ms = <30>;
-                        key-positions = <8 9>;
-                        bindings = <&kp BSLH>;
                 };
 
                 combo_left_bracket {
                         timeout-ms = <30>;
-                        key-positions = <1 2>;
+                        key-positions = <4 14>;
                         bindings = <&kp LBKT>;
                 };
 
                 combo_right_bracket {
                         timeout-ms = <30>;
-                        key-positions = <2 3>;
+                        key-positions = <5 15>;
                         bindings = <&kp RBKT>;
                 };
 
                 combo_single_quote {
                         timeout-ms = <30>;
-                        key-positions = <18 19>;
+                        key-positions = <6 16>;
                         bindings = <&kp SQT>;
+                };
+
+                combo_minus {
+                        timeout-ms = <30>;
+                        key-positions = <7 17>;
+                        bindings = <&kp EQUAL>;
+                };
+
+                combo_equal {
+                        timeout-ms = <30>;
+                        key-positions = <8 18>;
+                        bindings = <&kp MINUS>;
+                };
+
+                combo_backslash {
+                        timeout-ms = <30>;
+                        key-positions = <9 19>;
+                        bindings = <&kp BSLH>;
                 };
 
                 // Shortcut and Macro combos
