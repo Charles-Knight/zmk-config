@@ -64,7 +64,7 @@
                         key-positions = <32 33>;
                         bindings = <&kp ENTER>;
                 };
-    }
+    };
         
     keymap {
         compatible = "zmk,keymap";
