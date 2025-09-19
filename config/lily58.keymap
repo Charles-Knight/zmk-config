@@ -62,11 +62,11 @@
 
         secondary_layer {
             bindings = <
-                &none  &none    &none    &none    &none     &none                 &none     &none    &none    &none     &none   &none
-                &none  &none    &kp ESC  &kp UP   &kp TAB   &none                 &caps_word &kp BSPC &kp UP   &kp ENTER &none   &none
-                &none  &kp HOME &kp LEFT &kp DOWN &kp RIGHT &kp END               &kp HOME  &kp LEFT &kp DOWN &kp RIGHT &kp END &none
-                &trans &none    &none    &none    &none     &none   &none   &none &none     &none    &none    &none     &none   &none
-                                              &trans &trans &trans &trans   &trans &trans &trans &trans
+                &none  &none &none    &none    &none     &none                 &none &none &none &none &none &none
+                &none  &none &kp HOME &kp UP   &kp END   &none                 &none &none &none &none &none &none
+                &none  &none &kp LEFT &kp DOWN &kp RIGHT &none                 &none &none &none &none &none &none
+                &trans &none &none    &none    &none     &none   &none   &none &none &none &none &none &none &none
+                                           &trans &trans &trans &trans   &trans &trans &trans &trans
             >;
         };
 
