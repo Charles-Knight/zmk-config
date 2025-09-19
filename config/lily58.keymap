@@ -36,6 +36,34 @@
                 keep-mods = <(MOD_RSFT)>;
         };
     };
+
+    combos {
+                compatible = "zmk,combos";
+
+                combo_escape {
+                        timeout-ms = <50>;
+                        key-positions = <26 27>;
+                        bindings = <&kp ESC>;
+                };
+
+                combo_tab {
+                        timeout-ms = <50>;
+                        key-positions = <27 28>;
+                        bindings = <&kp TAB>;
+                };
+
+                combo_backspace {
+                        timeout-ms = <50>;
+                        key-positions = <31 32>;
+                        bindings = <&bspc_del>;
+                };
+
+                combo_enter {
+                        timeout-ms = <50>;
+                        key-positions = <32 33>;
+                        bindings = <&kp ENTER>;
+                };
+    }
         
     keymap {
         compatible = "zmk,keymap";
