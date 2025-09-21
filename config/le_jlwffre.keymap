@@ -147,6 +147,18 @@
             bindings = <&bt BT_SEL 4>;
         };
 
+        combo_toggle_output {
+            timeout-ms = <50>;
+            key-positions = <09 19 29>;
+            bindings = <&bt BT_CLR>;
+        };
+
+        combo_bt_clear {
+            timeout-ms = <50>;
+            key-positions = <05 15 25>;
+            bindings = <&out OUT_TOG>;
+        };
+
         // Shortcut and Macro combos
         combo_undo_mac{
             timeout-ms = <50>;
@@ -322,9 +334,9 @@
         adjust_layer {
             display-name = "Adj";
             bindings = <
-                &none &kp C_BKLT_TOG   &kp C_BRI_DN &kp C_BRI_UP &none           &out OUT_TOG &none        &none        &none        &bootloader
+                &none &kp C_BKLT_TOG   &kp C_BRI_DN &kp C_BRI_UP &none   &none &none &none &none &none
                 &none &none &none &none &none           &none &none &none &none &none
-                &none &none &none &none &none           &none &none &none &none &bt BT_CLR
+                &none &none &none &none &none           &none &none &none &none &none
                                   &none &none   &none   &none &none
             >;
         };
