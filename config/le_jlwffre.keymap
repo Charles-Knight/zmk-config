@@ -288,7 +288,7 @@
                 &kp Q &kp W       &kp E      &kp R      &kp T                   &kp Y       &kp U      &kp I      &kp O       &kp P
                 &kp A &hm LCTRL S &hm LALT D &hm LGUI F &hm GLOBE G             &hm GLOBE H &hm RGUI J &hm RALT K &hm RCTRL L &kp SEMI
                 &kp Z &kp X       &kp C      &kp V      &kp B   &kp N           &kp M      &kp COMMA  &kp DOT     &kp FSLH
-                                                &lt ADJ LPAR &kp LSHFT   &none   &lt SCND SPACE &lt NUM RPAR
+                                                &kp LPAR &kp LSHFT   &none   &lt SCND SPACE &lt NUM RPAR
             >;
         };
 
@@ -298,7 +298,7 @@
                 &kp Q &kp W       &kp E      &kp R      &kp T                 &kp Y       &kp U      &kp I      &kp O       &kp P
                 &kp A &hm LCTRL S &hm LALT D &hm LGUI F &hm GLOBE G           &hm GLOBE H &hm RGUI J &hm RALT K &hm RCTRL L &kp SEMI
                 &kp Z &kp X       &kp C      &kp V      &kp B                 &kp N       &kp M      &kp COMMA  &kp DOT     &kp FSLH
-                                                &lt ADJ LPAR &kp LSHFT   &none   &lt SCND SPACE &lt FUN RPAR
+                                                &kp LPAR &kp LSHFT   &none   &lt SCND SPACE &lt FUN RPAR
             >;
         };
 
