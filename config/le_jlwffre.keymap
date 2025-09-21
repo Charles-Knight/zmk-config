@@ -77,7 +77,7 @@
         // Adjust Combos
         combo_mute {
             timeout-ms = <30>;
-            key-positions = <2 12>;
+            key-positions = <1 11>;
             bindings = <&kp C_MUTE>;
         };
 
