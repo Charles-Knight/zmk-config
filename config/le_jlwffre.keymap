@@ -75,6 +75,24 @@
         };
 
         // Adjust Combos
+        combo_mute {
+            timeout-ms = <30>;
+            key-positions = <2 12>;
+            bindings = <&kp C_MUTE>;
+        };
+
+        combo_volume_down {
+            timeout-ms = <30>;
+            key-positions = <2 12>;
+            bindings = <&kp C_VOL_DN>;
+        };
+
+        combo_volume_up {
+            timeout-ms = <30>;
+            key-positions = <3 13>;
+            bindings = <&kp C_VOL_UP>;
+        };
+
         combo_play_pause {
             timeout-ms = <50>;
             key-positions = <11 21>;
@@ -121,49 +139,6 @@
             timeout-ms = <50>;
             key-positions = <19 29>;
             bindings = <&bt BT_SEL 4>;
-        };
-
-        // Symbol Combos
-        combo_grave {
-            timeout-ms = <30>;
-            key-positions = <3 13>;
-            bindings = <&kp GRAVE>;
-        };
-
-        combo_left_bracket {
-            timeout-ms = <30>;
-            key-positions = <4 14>;
-            bindings = <&kp LBKT>;
-        };
-
-        combo_right_bracket {
-            timeout-ms = <30>;
-            key-positions = <5 15>;
-            bindings = <&kp RBKT>;
-        };
-
-        combo_single_quote {
-            timeout-ms = <30>;
-            key-positions = <6 16>;
-            bindings = <&kp SQT>;
-        };
-
-        combo_minus {
-            timeout-ms = <30>;
-            key-positions = <8 18>;
-            bindings = <&kp EQUAL>;
-        };
-
-        combo_equal {
-            timeout-ms = <30>;
-            key-positions = <7 17>;
-            bindings = <&kp MINUS>;
-        };
-
-        combo_backslash {
-            timeout-ms = <30>;
-            key-positions = <9 19>;
-            bindings = <&kp BSLH>;
         };
 
         // Shortcut and Macro combos
