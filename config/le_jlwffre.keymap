@@ -119,7 +119,7 @@
 
         combo_brightness_up {
             timeout-ms = <50>;
-            key-positions = <04 14>;
+            key-positions = <4 14>;
             bindings = <&kp C_BRI_UP>;
         };
 
@@ -161,7 +161,7 @@
 
         combo_toggle_output {
             timeout-ms = <50>;
-            key-positions = <09 19 29>;
+            key-positions = <9 19 29>;
             bindings = <&bt BT_CLR>;
         };
 
