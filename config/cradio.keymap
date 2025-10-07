@@ -274,7 +274,7 @@
         // On le jlwffre this needs to be on 30 and 34 as the center key is in a part of the bottom row
         combo_layout_change {
             timeout-ms = <50>;
-            key-positions = <30 34>;
+            key-positions = <30 33>;
             bindings = <&tog WIN>;
         };
     };
