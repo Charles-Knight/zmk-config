@@ -48,7 +48,6 @@
                         layers = <MAC_L WIN_L SCND_L FUNC_L>;
                 };
 
-/*
                 combo_tab {
                         timeout-ms = <50>;
                         key-positions = <15 16>;
@@ -69,7 +68,6 @@
                         bindings = <&kp ENTER>;
                         layers = <MAC_L WIN_L SCND_L FUNC_L>;
                 };
-*/
 
                 combo_undo_mac {
                         timeout-ms = <50>;
