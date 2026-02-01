@@ -209,10 +209,10 @@
                 secondary_layer {
                         display-name = "2nd";
                         bindings = <
-                                &none  &kp HOME &kp UP   &kp END   &kp LBKT     &kp RBKT  &kp GRAVE &kp MINUS &kp EQUAL &kp BSLH
-                                &none  &kp LEFT &kp DOWN &kp RIGHT &none        &kp GLOBE &kp RGUI  &kp RALT  &kp RCTRL &kp SQT
-                                &kp N1 &kp N2   &kp N3   &kp N4    &kp N5       &kp N6    &kp N7    &kp N8    &kp N9    &kp N0
-                                                            &trans &trans       &trans &trans
+                                &kp LS(BSLH) &kp HOME &kp UP   &kp END   &kp LS(LBKT)    &kp LS(RBKT)   &kp LS(GRAVE)  &kp LS(MINUS)  &kp LS(EQUAL)   &kp LS(SQT)
+                                &kp BSLH     &kp LEFT &kp DOWN &kp RIGHT &kp LBKT        &hm GLOBE RBKT &hm RGUI GRAVE &hm RALT MINUS &hm RCTRL EQUAL &kp SQT
+                                &kp N1       &kp N2   &kp N3   &kp N4    &kp N5          &kp N6         &kp N7         &kp N8         &kp N9          &kp N0
+                                                            &trans &trans          &trans &trans
                         >;
                 };
 
