@@ -173,6 +173,13 @@
             layers = <WIN>;
         };
 
+        comb_lgui  {
+            timeout-ms = <50>;
+            key-positions = <28 29>;
+            bindings = <&kp LGUI>;
+            layers = <WIN>;
+        };
+
         // Other Combos
         // On zaphod, cradio, and normal le chiffre this should be on keys 30 and 33
         // On le jlwffre this needs to be on 30 and 34 as the center key is in a part of the bottom row
