@@ -71,21 +71,21 @@
 
         mac_layer {
             bindings = <
-                &kp MINUS &kp N1 &kp N2      &kp N3     &kp N4     &kp N5                     &kp N6      &kp N7     &kp N8     &kp N9      &kp N0   &kp EQUAL
-                &kp GRAVE &kp Q  &kp W       &kp E      &kp R      &kp T                      &kp Y       &kp U      &kp I      &kp O       &kp P    &kp BSLH
+                &kp ESC   &kp N1 &kp N2      &kp N3     &kp N4     &kp N5                     &kp N6      &kp N7     &kp N8     &kp N9      &kp N0   &bspc_del
+                &kp TAB   &kp Q  &kp W       &kp E      &kp R      &kp T                      &kp Y       &kp U      &kp I      &kp O       &kp P    &kp BSLH
                 &kp ESC   &kp A  &hm LCTRL S &hm LALT D &hm LGUI F &hm GLOBE G                &hm GLOBE H &hm RGUI J &hm RALT K &hm RCTRL L &kp SEMI &kp SQT
                 &kp LCTRL &kp Z  &kp X       &kp C      &kp V      &kp B  &kp LBKT   &kp RBKT &kp N       &kp M      &kp COMMA  &kp DOT     &kp FSLH &kp ENTER
-                                               &kp LALT &kp LGUI &kp TAB &kp LSHFT   &lt SECONDARY_L SPACE &bspc_del &kp ENTER &mo ADJUST_L
+                                             &kp LALT &kp LGUI &kp GRAVE &kp LSHFT   &lt SECONDARY_L SPACE &kp MINUS &kp EQUAL &mo ADJUST_L
             >;
         };
 
         windows_layer {
             bindings = <
-                &kp MINUS &kp N1 &kp N2      &kp N3     &kp N4     &kp N5                     &kp N6      &kp N7     &kp N8     &kp N9      &kp N0   &kp EQUAL
-                &kp GRAVE &kp Q  &kp W       &kp E      &kp R      &kp T                      &kp Y       &kp U      &kp I      &kp O       &kp P    &kp BSLH
+                &kp ESC   &kp N1 &kp N2      &kp N3     &kp N4     &kp N5                     &kp N6      &kp N7     &kp N8     &kp N9      &kp N0   &bspc_del
+                &kp TAB   &kp Q  &kp W       &kp E      &kp R      &kp T                      &kp Y       &kp U      &kp I      &kp O       &kp P    &kp BSLH
                 &kp ESC   &kp A  &hm LCTRL S &hm LALT D &hm LGUI F &hm GLOBE G                &hm GLOBE H &hm RGUI J &hm RALT K &hm RCTRL L &kp SEMI &kp SQT
                 &kp LCTRL &kp Z  &kp X       &kp C      &kp V      &kp B  &kp LBKT   &kp RBKT &kp N       &kp M      &kp COMMA  &kp DOT     &kp FSLH &kp ENTER
-                                               &kp LALT &kp LGUI &kp TAB &kp LSHFT   &lt SECONDARY_L SPACE &bspc_del &kp ENTER &mo ADJUST_L
+                                             &kp LALT &kp LGUI &kp GRAVE &kp LSHFT   &lt SECONDARY_L SPACE &kp MINUS &kp EQUAL &mo ADJUST_L
             >;
         };
 
