@@ -35,4 +35,3 @@ include:
     shield: zaphod_lite
   - board: nice_nano_v2
     shield: settings_reset
-  # - board: le_jlwffre
