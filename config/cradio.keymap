@@ -138,13 +138,20 @@
             layers = <MAC>;
         };
 
+        combo_delete_word_win{
+            timeout-ms = <50>;
+            key-positions = <15 16>;
+            bindings = <&kp LC(BACKSPACE)>;
+            layers = <WIN>;
+        };
+
         combo_left{
             timeout-ms = <50>;
             key-positions = <5 15>;
             bindings = <&kp LEFT>;
         };
 
-        combo_down_arrow{
+        combo_down{
             timeout-ms = <50>;
             key-positions = <6 16>;
             bindings = <&kp DOWN>;
@@ -160,19 +167,6 @@
             timeout-ms = <50>;
             key-positions = <8 18>;
             bindings = <&kp RIGHT>;
-        };
-
-        combo_left_arrow{
-            timeout-ms = <50>;
-            key-positions = <15 16>;
-            bindings = <&kp LEFT_ARROW>;
-        };
-
-        combo_delete_word_win{
-            timeout-ms = <50>;
-            key-positions = <15 16>;
-            bindings = <&kp LC(BACKSPACE)>;
-            layers = <WIN>;
         };
 
         combo_left_desktop_mac {
