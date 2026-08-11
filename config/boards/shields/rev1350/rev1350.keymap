@@ -44,13 +44,10 @@
                         compatible = "zmk,behavior-tap-dance";
                         #binding-cells = <0>;
                         tapping-term-ms = <200>;
-                        bindings = <&mo NUM>, <&tog NUM>;
+                        bindings = <&mo NMBR_L>, <&tog NMBR_L>;
                 };
         };
 
-        // Todo: New Combos
-        //       Undo, Cut, Copy, Paste
-        //       Macro to insert VINs
         combos {
                 compatible = "zmk,combos";
 
