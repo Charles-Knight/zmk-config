@@ -45,6 +45,20 @@
                         tapping-term-ms = <200>;
                         bindings = <&mo NUM>, <&tog NUM>;
                 };
+
+                td_l_brackets: tap_dance_left_brackets {
+                    compatible = "zmk,behavior-tap-dance";
+                    #binding-cells = <0>;
+                    tapping-term-ms = <200>;
+                    bindings = <&kp LPAR>, <&kp LBKT>, <&kp LS(LBKT)>;
+                };
+
+                td_r_brackets: tap_dance_right_brackets {
+                    compatible = "zmk,behavior-tap-dance";
+                    #binding-cells = <0>;
+                    tapping-term-ms = <200>;
+                    bindings = <&kp RPAR>, <&kp RBKT>, <&kp LS(RBKT)>;
+                };
         };
 
         combos {
